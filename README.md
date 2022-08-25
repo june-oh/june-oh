@@ -1,5 +1,8 @@
 ### 🌱 I’m currently learning ASR 
 
+![](https://komarev.com/ghpvc/?username=june-oh&style=for-the-badge&color=blue&label=Views)
+
+
 <!--
 **june-oh/june-oh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
