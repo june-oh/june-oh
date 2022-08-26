@@ -1,6 +1,8 @@
 ### 🌱 I’m currently learning ASR 
 
-![](https://komarev.com/ghpvc/?username=june-oh&style=for-the-badge&color=blue&label=Views)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjune-oh%2Fjune-oh&count_bg=%2379C83D&title_bg=%23555555&icon=pytorch.svg&icon_color=%23FF0000&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
+
+
 
 
 <!--
