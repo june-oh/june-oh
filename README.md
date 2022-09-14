@@ -2,7 +2,7 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjune-oh%2Fjune-oh&count_bg=%2379C83D&title_bg=%23555555&icon=pytorch.svg&icon_color=%23FF0000&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
 
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=melon10242)](https://solved.ac/melon10242)
+<!--[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=melon10242)](https://solved.ac/melon10242)-->
 
 <!--
 **june-oh/june-oh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
