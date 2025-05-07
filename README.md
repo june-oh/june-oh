@@ -1,20 +1,28 @@
-### None
+## 👋 Hi there! I'm **RiceBerry**
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjune-oh%2Fjune-oh&count_bg=%2379C83D&title_bg=%23555555&icon=pytorch.svg&icon_color=%23FF0000&title=hits&edge_flat=true)](https://hits.seeyoufarm.com)
+🎓 **PhD Candidate in Computer Science and Engineering @Sogang Univ.**
 
-<!--[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=melon10242)](https://solved.ac/melon10242)-->
+🔍 **Research Interests:**
 
-<!--
-**june-oh/june-oh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+* 🚀 **End-to-End Automatic Speech Recognition (ASR)**
+* 🎙️ **Speech Analytics & Speech Assessment**
+* 📈 **Context-aware & Domain-specific ASR**
+* 🤖 **Speech Recognition for Real-time Applications**
+* 🌐 **Integration of Large Language Models (LLMs) in Speech Tech**
 
-Here are some ideas to get you started:
+📚 **Currently working on:**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* ⚙️ Building robust, low-latency streaming ASR systems using **FastConformer RNNT + CTC**
+* 🎮 Domain-specific vocabulary biasing (Gaming, Telephony)
+* 🗣️ Automated speaking assessment frameworks using **Wav2Vec & Conformer models**
+* 🛡️ Intelligent audio analysis for content moderation & safety
+
+💻 **Tech Stack:**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat\&logo=python\&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat\&logo=pytorch\&logoColor=white)
+![NVIDIA NeMo](https://img.shields.io/badge/NVIDIA%20NeMo-76B900?style=flat\&logo=nvidia\&logoColor=white)
+![Hugging Face Transformers](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat\&logo=huggingface\&logoColor=black)
+![Kaldi](https://img.shields.io/badge/Kaldi-F37626?style=flat\&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat\&logo=gnu-bash\&logoColor=white)
+![KenLM](https://img.shields.io/badge/KenLM-000000?style=flat\&logoColor=white)
