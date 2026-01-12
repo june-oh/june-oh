@@ -104,7 +104,7 @@ export const siteConfig = {
     },
     {
       company: "Sogang University - Speech Information Lab",
-      title: "M.S. Student",
+      title: "M.E. Student",
       dateRange: "Sep 2017 - Aug 2019",
       bullets: [
         "Advisor: Prof. Ji-Hwan Kim",
