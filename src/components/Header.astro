@@ -1,0 +1,275 @@
+---
+import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const pubs = siteConfig.publications;
+const hasPublications = pubs && (pubs.journals?.length > 0 || pubs.conferences?.length > 0 || pubs.domestic?.length > 0);
+const hasAwards = siteConfig.awards && siteConfig.awards.length > 0;
+const hasPatents = siteConfig.patents && siteConfig.patents.length > 0;
+const hasCertificates = siteConfig.certificates && siteConfig.certificates.length > 0;
+const hasAchievements = hasAwards || hasPatents || hasCertificates;
+
+const navItems = [
+  { id: "about", label: "About", show: true },
+  { id: "projects", label: "Research", show: hasProjects },
+  { id: "experience", label: "Experience", show: hasExperience },
+  { id: "education", label: "Education", show: hasEducation },
+  { id: "publications", label: "Publications", show: hasPublications },
+  { id: "awards", label: "Achievements", show: hasAchievements },
+].filter(item => item.show);
+---
+
+<header
+  id="header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <nav class="max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-4 flex items-center justify-between">
+    <!-- Mobile menu button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
+      aria-label="메뉴 열기"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    
+    <!-- Empty div for spacing on desktop -->
+    <div class="hidden md:block w-20"></div>
+    
+    <!-- Navigation links - Center (Desktop only) -->
+    <ul class="hidden md:flex items-center gap-6 lg:gap-8">
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={`#${item.id}`}
+            class="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors font-medium text-sm lg:text-base"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    
+    <!-- Dark mode toggle (Right side) - iOS style -->
+    <div class="flex items-center gap-2">
+      <!-- Sun icon (light mode) / Moon icon (dark mode) -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 text-amber-500 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 sm:w-5 sm:h-5 text-slate-300 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+      </svg>
+      
+      <!-- iOS Toggle Switch -->
+      <button
+        id="dark-mode-toggle"
+        class="relative w-10 h-5 sm:w-11 sm:h-6 rounded-full transition-colors duration-300 focus:outline-none bg-gray-300 dark:bg-sky-500"
+        role="switch"
+        aria-checked="false"
+        aria-label="Toggle dark mode"
+        title="다크모드 전환"
+      >
+        <span 
+          id="toggle-knob"
+          class="absolute top-0.5 left-0.5 w-4 h-4 sm:w-5 sm:h-5 bg-white rounded-full shadow-md transform transition-transform duration-300"
+        ></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile menu overlay -->
+  <div
+    id="mobile-menu-overlay"
+    class="fixed inset-0 bg-black/50 z-40 hidden md:hidden transition-opacity duration-300 opacity-0"
+  ></div>
+  
+  <!-- Mobile menu panel -->
+  <div
+    id="mobile-menu"
+    class="fixed top-0 left-0 bottom-0 w-72 max-w-[80vw] bg-white dark:bg-slate-900 z-50 transform -translate-x-full transition-transform duration-300 md:hidden shadow-xl"
+  >
+    <div class="p-4 border-b border-gray-200 dark:border-slate-700 flex items-center justify-between">
+      <span class="font-bold text-gray-900 dark:text-gray-100" style={`color: ${siteConfig.accentColor}`}>
+        {siteConfig.name}
+      </span>
+      <button
+        id="mobile-menu-close"
+        class="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
+        aria-label="메뉴 닫기"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    
+    <ul class="p-4 space-y-1">
+      <li>
+        <a
+          href="#hero"
+          class="mobile-menu-link block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors font-medium"
+        >
+          🏠 Home
+        </a>
+      </li>
+      {navItems.map((item) => (
+        <li>
+          <a
+            href={`#${item.id}`}
+            class="mobile-menu-link block px-4 py-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors font-medium"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    
+    <!-- Social links in mobile menu -->
+    <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 dark:border-slate-700">
+      <div class="flex justify-center gap-6">
+        {siteConfig.social?.email && (
+          <a
+            href={`mailto:${siteConfig.social.email}`}
+            aria-label="Email"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </a>
+        )}
+        {siteConfig.social?.github && (
+          <a
+            href={siteConfig.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 00-.1 3.2 4.6 4.6 0 00-1.3 3.2c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+            </svg>
+          </a>
+        )}
+        {siteConfig.social?.linkedin && (
+          <a
+            href={siteConfig.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        )}
+        {siteConfig.social?.cv && (
+          <a
+            href={siteConfig.social.cv}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CV"
+            class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </a>
+        )}
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const toggleKnob = document.getElementById('toggle-knob');
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+  
+  // Initialize dark mode
+  function initDarkMode() {
+    const isDark = localStorage.getItem('darkMode') === 'true' || 
+      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      toggleKnob?.classList.add('translate-x-4', 'sm:translate-x-5');
+      darkModeToggle?.setAttribute('aria-checked', 'true');
+    } else {
+      document.documentElement.classList.remove('dark');
+      toggleKnob?.classList.remove('translate-x-4', 'sm:translate-x-5');
+      darkModeToggle?.setAttribute('aria-checked', 'false');
+    }
+  }
+  
+  // Toggle dark mode
+  darkModeToggle?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('darkMode', isDark.toString());
+    
+    if (isDark) {
+      toggleKnob?.classList.add('translate-x-4', 'sm:translate-x-5');
+      darkModeToggle?.setAttribute('aria-checked', 'true');
+    } else {
+      toggleKnob?.classList.remove('translate-x-4', 'sm:translate-x-5');
+      darkModeToggle?.setAttribute('aria-checked', 'false');
+    }
+  });
+  
+  // Mobile menu functions
+  function openMobileMenu() {
+    mobileMenu?.classList.remove('-translate-x-full');
+    mobileMenuOverlay?.classList.remove('hidden');
+    setTimeout(() => {
+      mobileMenuOverlay?.classList.remove('opacity-0');
+    }, 10);
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeMobileMenu() {
+    mobileMenu?.classList.add('-translate-x-full');
+    mobileMenuOverlay?.classList.add('opacity-0');
+    setTimeout(() => {
+      mobileMenuOverlay?.classList.add('hidden');
+    }, 300);
+    document.body.style.overflow = '';
+  }
+  
+  mobileMenuBtn?.addEventListener('click', openMobileMenu);
+  mobileMenuClose?.addEventListener('click', closeMobileMenu);
+  mobileMenuOverlay?.addEventListener('click', closeMobileMenu);
+  
+  // Close mobile menu when clicking a link
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+  
+  // Header background on scroll
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY > 100) {
+      header?.classList.add("bg-white/90", "dark:bg-slate-900/90", "backdrop-blur-sm", "shadow-sm");
+    } else {
+      header?.classList.remove("bg-white/90", "dark:bg-slate-900/90", "backdrop-blur-sm", "shadow-sm");
+    }
+  });
+  
+  // Initialize on load
+  initDarkMode();
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
