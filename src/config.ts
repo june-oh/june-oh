@@ -34,12 +34,12 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "SEAM: LLM-based Speech Recognition",
+      name: "Speech-LLM Integration for ASR",
       description:
-        "Bridging the Semantic-Temporal Granularity Gap for LLM-based Speech Recognition. Accepted at EACL 2026 Findings.",
+        "Adapter-only bridging approach connecting frozen speech encoders with frozen LLMs for domain-adaptive ASR. Includes SEAM (EACL 2026 Findings) and Adapter-Only Bridging (PAKDD 2026 Under Review). PhD thesis research.",
       partner: "MSIT / IITP",
-      period: "Apr 2022 - Present",
-      skills: ["PyTorch", "LLM", "ASR"],
+      period: "May 2025 - Present",
+      skills: ["PyTorch", "LLM", "Whisper", "Gemma", "ASR"],
     },
     {
       name: "End-to-End Korean ASR for Gaming",
@@ -191,6 +191,13 @@ export const siteConfig = {
         venue: "Findings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
         year: "2026",
         note: "Accepted",
+      },
+      {
+        authors: "J. Oh and J.-H. Kim",
+        title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for Domain-Adaptive ASR",
+        venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",
+        year: "2026",
+        note: "Under Review",
       },
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
