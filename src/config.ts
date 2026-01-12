@@ -34,12 +34,20 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Speech-LLM Integration for ASR",
+      name: "SEAM: Semantic-Temporal Bridging for Speech-LLM",
       description:
-        "Adapter-only bridging approach connecting frozen speech encoders with frozen LLMs for domain-adaptive ASR. Includes SEAM (EACL 2026 Findings) and Adapter-Only Bridging (PAKDD 2026 Under Review). PhD thesis research.",
+        "Frozen speech encoder with trainable decoder and LLM LoRA fine-tuning. Bridges semantic-temporal granularity gap for LLM-based ASR. Accepted at EACL 2026 Findings.",
       partner: "MSIT / IITP",
       period: "May 2025 - Present",
-      skills: ["PyTorch", "LLM", "Whisper", "Gemma", "ASR"],
+      skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
+    },
+    {
+      name: "Adapter-Only Speech-LLM Bridging (PhD Thesis)",
+      description:
+        "Fully frozen speech encoder and LLM with lightweight adapter-only bridging (0.44% params). Achieves 26.8% WER reduction on academic domains with inference-time domain prompting. Submitted to PAKDD 2026.",
+      partner: "MSIT / IITP",
+      period: "May 2025 - Present",
+      skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
       name: "End-to-End Korean ASR for Gaming",
@@ -148,8 +156,8 @@ export const siteConfig = {
         authors: "J. Oh, J. Nam, and J.-H. Kim",
         title: "HiTCA: Fusing Hierarchical Text and Contextual Audio for Accurate VCR",
         venue: "EURASIP Journal on Audio, Speech, and Music Processing",
-        year: "Under Review",
-        note: "SCIE",
+        year: "2025",
+        note: "SCIE, Under Review",
       },
       {
         authors: "S. Ma, J. Oh, M. Kim, and J.-H. Kim",
