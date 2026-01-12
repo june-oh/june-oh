@@ -10,7 +10,8 @@ export const siteConfig = {
     email: "ohjs@sogang.ac.kr",
     github: "https://github.com/june-oh",
     linkedin: "https://www.linkedin.com/in/junseokoh-riceberry",
-    cv: "/cv.pdf",
+    scholar: "https://scholar.google.com/citations?user=W3GNCfgAAAAJ",
+    cv: "/june-oh/cv.pdf",
   },
   aboutMe:
     "I am a Ph.D. candidate in Computer Science and Engineering at Sogang University, advised by Prof. Ji-Hwan Kim. My research focuses on End-to-End Automatic Speech Recognition (ASR), Speech Analytics & Assessment, Context-aware & Domain-specific ASR, and the integration of Large Language Models (LLMs) in Speech Technology. I am passionate about building robust, low-latency streaming ASR systems and developing automated speaking assessment frameworks.",

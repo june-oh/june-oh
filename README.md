@@ -4,6 +4,7 @@
 🔬 Advised by Prof. Ji-Hwan Kim
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-june--oh.github.io-0ea5e9?style=for-the-badge)](https://june-oh.github.io/june-oh/)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=W3GNCfgAAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/junseokoh-riceberry)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ohjs@sogang.ac.kr)
 

@@ -213,6 +213,26 @@ import { siteConfig } from "../config";
       )
     }
     {
+      siteConfig.social?.scholar && (
+        <a
+          href={siteConfig.social.scholar}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Google Scholar"
+          class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8"
+            fill="currentColor"
+          >
+            <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+          </svg>
+        </a>
+      )
+    }
+    {
       siteConfig.social?.cv && (
         <a
           href={siteConfig.social.cv}
