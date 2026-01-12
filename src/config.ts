@@ -34,20 +34,20 @@ export const siteConfig = {
   ],
   projects: [
     {
+      name: "Adapter-Only Speech-LLM Bridging (PhD Dissertation)",
+      description:
+        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Under Review.",
+      partner: "MSIT / IITP",
+      period: "Oct 2025 - Present",
+      skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
+    },
+    {
       name: "SEAM: Temporal-Semantic Bridging for Speech-LLM",
       description:
         "Encoder-decoder architecture with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. Achieves 2.6%/5.2% WER on LibriSpeech and 4.7% on TED-LIUM-v2. EACL 2026 Findings.",
       partner: "MSIT / IITP",
       period: "May 2025 - Jan 2026",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
-    },
-    {
-      name: "Adapter-Only Speech-LLM Bridging (PhD Thesis)",
-      description:
-        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Under Review.",
-      partner: "MSIT / IITP",
-      period: "Oct 2025 - Present",
-      skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
       name: "End-to-End Korean ASR for Gaming",
