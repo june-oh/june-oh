@@ -46,7 +46,7 @@ export const siteConfig = {
       description:
         "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Under Review.",
       partner: "MSIT / IITP",
-      period: "Jan 2026 - Present",
+      period: "Oct 2025 - Present",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
