@@ -198,8 +198,8 @@ const navItems = [
   
   // Initialize dark mode
   function initDarkMode() {
-    const isDark = localStorage.getItem('darkMode') === 'true' || 
-      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    // Default to light mode (only dark if explicitly set in localStorage)
+    const isDark = localStorage.getItem('darkMode') === 'true';
     
     if (isDark) {
       document.documentElement.classList.add('dark');
