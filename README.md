@@ -1,4 +1,4 @@
-## 👋 Hi there! I'm **RiceBerry**
+## 👋 Hi there! I'm **Junseok Oh** (**RiceBerry**)
 
 🎓 **PhD Candidate in Computer Science and Engineering @Sogang Univ.**
 
