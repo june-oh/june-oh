@@ -122,6 +122,35 @@ import { siteConfig } from "../config";
       >
         {siteConfig.title}
       </p>
+      {siteConfig.social?.cv && (
+        <a
+          href={siteConfig.social.cv}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 mt-4 sm:mt-6 px-4 py-2 rounded-lg border-2 text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 animate-fade-in animation-delay-400"
+          style={`border-color: ${siteConfig.accentColor}; color: ${siteConfig.accentColor}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+            <path d="M9 9l1 0" />
+            <path d="M9 13l6 0" />
+            <path d="M9 17l6 0" />
+          </svg>
+          View CV / Resume
+        </a>
+      )}
     </div>
   </div>
   
