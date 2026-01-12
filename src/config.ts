@@ -92,7 +92,7 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Sogang University - Speech Information Lab",
+      company: "Sogang University - Auditory Intelligence Lab",
       title: "Ph.D. Student",
       dateRange: "Mar 2022 - Present",
       bullets: [
@@ -103,7 +103,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Sogang University - Speech Information Lab",
+      company: "Sogang University - Auditory Intelligence Lab",
       title: "M.E. Student",
       dateRange: "Sep 2017 - Aug 2019",
       bullets: [
