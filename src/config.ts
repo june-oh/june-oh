@@ -16,7 +16,7 @@ export const siteConfig = {
   aboutMe:
     "I am a Ph.D. candidate in Computer Science and Engineering at Sogang University, advised by Prof. Ji-Hwan Kim. My research focuses on End-to-End Automatic Speech Recognition (ASR), Speech Analytics & Assessment, Context-aware & Domain-specific ASR, and the integration of Large Language Models (LLMs) in Speech Technology. I am passionate about building robust, low-latency streaming ASR systems and developing automated speaking assessment frameworks.",
   // Skill icons from skillicons.dev (general programming tools)
-  skillIcons: ["py", "pytorch", "linux", "bash", "git", "github", "docker", "vscode"],
+  skillIcons: ["py", "pytorch", "linux", "bash", "git", "github", "gitlab", "docker", "vscode"],
   // Speech/ML specific tools (displayed as text badges)
   speechTools: [
     "NVIDIA NeMo",

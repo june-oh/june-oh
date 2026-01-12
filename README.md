@@ -33,7 +33,7 @@
 ### 💻 Tech Stack
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,docker,linux,bash,git&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,pytorch,docker,linux,bash,git,github,gitlab&theme=dark" />
 </a>
 
 ![NeMo](https://img.shields.io/badge/NVIDIA_NeMo-76B900?style=flat&logo=nvidia&logoColor=white)
