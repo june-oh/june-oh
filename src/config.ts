@@ -34,19 +34,19 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "SEAM: Semantic-Temporal Bridging for Speech-LLM",
+      name: "SEAM: Temporal-Semantic Bridging for Speech-LLM",
       description:
-        "Frozen speech encoder with trainable decoder and LLM LoRA fine-tuning. Bridges semantic-temporal granularity gap for LLM-based ASR. Accepted at EACL 2026 Findings.",
+        "Encoder-decoder architecture with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. Achieves 2.6%/5.2% WER on LibriSpeech and 4.7% on TED-LIUM-v2. EACL 2026 Findings.",
       partner: "MSIT / IITP",
-      period: "May 2025 - Present",
+      period: "May 2025 - Jan 2026",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
     },
     {
       name: "Adapter-Only Speech-LLM Bridging (PhD Thesis)",
       description:
-        "Fully frozen speech encoder and LLM with lightweight adapter-only bridging (0.44% params). Achieves 26.8% WER reduction on academic domains with inference-time domain prompting. Submitted to PAKDD 2026.",
+        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Under Review.",
       partner: "MSIT / IITP",
-      period: "May 2025 - Present",
+      period: "Jan 2026 - Present",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
