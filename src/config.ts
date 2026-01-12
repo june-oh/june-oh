@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Junseok Oh (오준석)",
-  nickname: "RiceBerry",
+  nickname: "june-oh / RiceBerry",
   // Author name patterns to highlight in publications
   authorHighlight: ["J. Oh", "오준석"],
   title: "Ph.D. Candidate in Computer Science and Engineering",

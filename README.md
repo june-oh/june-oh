@@ -1,4 +1,4 @@
-## 👋 Hi there! I'm **Junseok Oh (오준석)** aka **RiceBerry**
+## 👋 Hi there! I'm **Junseok Oh (오준석)** aka **june-oh** or **RiceBerry**
 
 🎓 **Ph.D. Candidate** @ Sogang University, Auditory Intelligence Lab  
 🔬 Advised by Prof. Ji-Hwan Kim
