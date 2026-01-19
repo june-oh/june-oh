@@ -30,6 +30,15 @@ import "../styles/global.css";
     <!-- Pretendard for Korean -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
     <title>{siteConfig.name} - {siteConfig.title}</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRQ6LCBH32"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HRQ6LCBH32');
+    </script>
   </head>
   <body>
     <Header />
