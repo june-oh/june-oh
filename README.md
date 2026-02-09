@@ -25,7 +25,7 @@
 | Year | Paper | Venue |
 |------|-------|-------|
 | 2026 | **SEAM**: Bridging Temporal-Semantic Gap for Speech-LLM | EACL Findings |
-| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD *(Under Review)* |
+| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD *(Accepted, Oral)* |
 | 2025 | **HiTCA**: Hierarchical Text & Contextual Audio for VCR | EURASIP JASM *(Under Review)* |
 
 ---

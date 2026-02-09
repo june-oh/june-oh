@@ -22,7 +22,7 @@ export const siteConfig = {
     "NVIDIA NeMo",
     "Kaldi",
     "KenLM",
-    "Hugging Face Transformers",
+    "Hugging Face Transformers & PEFT",
     "Whisper",
     "Wav2Vec",
     "FastConformer",
@@ -37,7 +37,7 @@ export const siteConfig = {
     {
       name: "Adapter-Only Speech-LLM Bridging (PhD Dissertation)",
       description:
-        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Under Review.",
+        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Accepted (Oral).",
       partner: "MSIT / IITP",
       period: "Oct 2025 - Present",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
@@ -67,12 +67,20 @@ export const siteConfig = {
       skills: ["FastConformer", "CTC", "Streaming ASR"],
     },
     {
-      name: "Automated Korean Speaking Assessment",
+      name: "Automated Korean Speaking Assessment (2024)",
       description:
-        "Multi-task learning framework using Wav2Vec to jointly model pronunciation, fluency, and content for L2-Korean assessment, integrated with LLM for automated scoring.",
+        "Multi-task learning framework using Wav2Vec to jointly model pronunciation, fluency, and content for L2-Korean assessment, integrated with Conformer-CTC ASR and LLM for automated multi-aspect scoring.",
       partner: "Ministry of Culture, Sports and Tourism",
       period: "May 2024 - Dec 2024",
       skills: ["Wav2Vec", "Conformer", "LLM"],
+    },
+    {
+      name: "Automated Korean Speaking Assessment (2023)",
+      description:
+        "Built an end-to-end evaluation pipeline for L2 Korean speakers by combining Conformer-CTC ASR outputs with BERT-based semantic scoring. Developed algorithms to quantify pronunciation accuracy, speech rate, and syntactic correctness.",
+      partner: "Ministry of Culture, Sports and Tourism",
+      period: "May 2023 - Dec 2023",
+      skills: ["Conformer", "CTC", "BERT"],
     },
     {
       name: "Dialog-based Multi-modal Explainable AI",
@@ -203,10 +211,10 @@ export const siteConfig = {
       },
       {
         authors: "J. Oh and J.-H. Kim",
-        title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for Domain-Adaptive ASR",
+        title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",
         year: "2026",
-        note: "Under Review",
+        note: "Accepted, Oral",
       },
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
