@@ -139,7 +139,8 @@ export const siteConfig = {
       achievements: [
         "Advisor: Prof. Ji-Hwan Kim",
         "Research Focus: End-to-End ASR, Speech Analytics, LLM Integration",
-        "EACL 2026 Findings Paper Accepted (SEAM)",
+        "PAKDD 2026 Accepted, Oral Presentation",
+        "EACL 2026 Findings Accepted (SEAM)",
       ],
     },
     {
@@ -204,17 +205,17 @@ export const siteConfig = {
     conferences: [
       {
         authors: "J. Oh and J.-H. Kim",
-        title: "SEAM: Bridging the Semantic-Temporal Granularity Gap for LLM-based Speech Recognition",
-        venue: "Findings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
-        year: "2026",
-        note: "Accepted",
-      },
-      {
-        authors: "J. Oh and J.-H. Kim",
         title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",
         year: "2026",
         note: "Accepted, Oral",
+      },
+      {
+        authors: "J. Oh and J.-H. Kim",
+        title: "SEAM: Bridging the Semantic-Temporal Granularity Gap for LLM-based Speech Recognition",
+        venue: "Findings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
+        year: "2026",
+        note: "Accepted",
       },
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
