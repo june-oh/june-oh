@@ -247,7 +247,8 @@ export const siteConfig = {
         title: "Shortcut connections based deep speaker embeddings for end-to-end speaker verification system",
         venue: "Proc. Interspeech",
         year: "2019",
-        volume: "pp. 17",
+        volume: "pp. 2928–2932",
+        link: "https://www.isca-archive.org/interspeech_2019/seo19_interspeech.html",
       },
     ],
     domestic: [
@@ -266,6 +267,7 @@ export const siteConfig = {
         year: "2019",
         volume: "vol. 38, no. 5, pp. 607–613",
         note: "KCI",
+        link: "https://doi.org/10.7776/ASK.2019.38.5.607",
       },
     ],
   },

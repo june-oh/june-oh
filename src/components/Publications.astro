@@ -107,7 +107,14 @@ function highlightAuthor(authors: string): string {
                       <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
                         <span class="text-gray-600 dark:text-gray-400" set:html={highlightAuthor(pub.authors) + ","} />
                         {" "}
-                        <span class="font-semibold text-gray-900 dark:text-gray-100">"{pub.title},"</span>
+                        {pub.link ? (
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer"
+                            class="font-semibold hover:underline"
+                            style={`color: ${siteConfig.accentColor}`}
+                          >"{pub.title},"</a>
+                        ) : (
+                          <span class="font-semibold text-gray-900 dark:text-gray-100">"{pub.title},"</span>
+                        )}
                         {" "}
                         <span class="italic text-gray-700 dark:text-gray-300">in {pub.venue}</span>
                         {pub.volume && <span class="text-gray-600 dark:text-gray-400">, {pub.volume}</span>}
@@ -119,6 +126,20 @@ function highlightAuthor(authors: string): string {
                           >
                             {pub.note}
                           </span>
+                        )}
+                        {pub.link && (
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer"
+                            class="ml-2 inline-flex items-center hover:opacity-80 transition-opacity"
+                            style={`color: ${siteConfig.accentColor}`}
+                            title="논문 보기"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                              <path d="M11 13l9 -9" />
+                              <path d="M15 4h5v5" />
+                            </svg>
+                          </a>
                         )}
                       </p>
                     </li>
@@ -142,7 +163,14 @@ function highlightAuthor(authors: string): string {
                       <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
                         <span class="text-gray-600 dark:text-gray-400" set:html={highlightAuthor(pub.authors) + ","} />
                         {" "}
-                        <span class="font-semibold text-gray-900 dark:text-gray-100">"{pub.title},"</span>
+                        {pub.link ? (
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer"
+                            class="font-semibold hover:underline"
+                            style={`color: ${siteConfig.accentColor}`}
+                          >"{pub.title},"</a>
+                        ) : (
+                          <span class="font-semibold text-gray-900 dark:text-gray-100">"{pub.title},"</span>
+                        )}
                         {" "}
                         <span class="italic text-gray-700 dark:text-gray-300">{pub.venue}</span>
                         {pub.volume && <span class="text-gray-600 dark:text-gray-400">, {pub.volume}</span>}
@@ -154,6 +182,20 @@ function highlightAuthor(authors: string): string {
                           >
                             {pub.note}
                           </span>
+                        )}
+                        {pub.link && (
+                          <a href={pub.link} target="_blank" rel="noopener noreferrer"
+                            class="ml-2 inline-flex items-center hover:opacity-80 transition-opacity"
+                            style={`color: ${siteConfig.accentColor}`}
+                            title="논문 보기"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                              <path d="M11 13l9 -9" />
+                              <path d="M15 4h5v5" />
+                            </svg>
+                          </a>
                         )}
                       </p>
                     </li>
