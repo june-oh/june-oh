@@ -176,6 +176,7 @@ export const siteConfig = {
         year: "2025",
         volume: "vol. 19, no. 5, pp. 1406-1440",
         note: "SCIE",
+        link: "https://koreascience.kr/article/JAKO202517650401341.pdf",
       },
       {
         authors: "J. Oh, E. Cho, and J.-H. Kim",
@@ -184,6 +185,7 @@ export const siteConfig = {
         year: "2024",
         volume: "vol. 18, no. 6, pp. 1692–1705",
         note: "SCIE",
+        link: "https://itiis.org/digital-library/99358",
       },
       {
         authors: "S. Seo, J. Oh, E. Cho, H. Park, G. Kim, and J.-H. Kim",
@@ -192,6 +194,7 @@ export const siteConfig = {
         year: "2022",
         volume: "vol. 73, no. 2",
         note: "SCIE",
+        link: "https://www.techscience.com/cmc/v73n2/48321/html",
       },
       {
         authors: "M. Lim, D. Lee, H. Park, Y. Kang, J. Oh, J.-S. Park, G.-J. Jang, and J.-H. Kim",
@@ -200,6 +203,7 @@ export const siteConfig = {
         year: "2018",
         volume: "vol. 12, no. 6, pp. 2748–2760",
         note: "SCIE",
+        link: "https://koreascience.kr/article/JAKO201821464986105.page",
       },
     ],
     conferences: [
