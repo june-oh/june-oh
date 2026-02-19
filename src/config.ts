@@ -241,6 +241,7 @@ export const siteConfig = {
         venue: "Proc. IEEE Int. Conf. Big Data and Smart Computing (BigComp)",
         year: "2019",
         volume: "pp. 1–4",
+        link: "https://ieeexplore.ieee.org/document/8679197",
       },
       {
         authors: "S. Seo, D. J. Rim, M. Lim, D. Lee, H. Park, J. Oh, C. Kim, and J.-H. Kim",
