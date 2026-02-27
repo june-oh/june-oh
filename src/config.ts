@@ -99,6 +99,14 @@ export const siteConfig = {
       skills: ["Whisper", "Sound Event Detection", "Fine-tuning"],
     },
     {
+      name: "Voice/Singing Conversion: so-vits-svc & whisper-vits-svc",
+      description:
+        "End-to-end SVC pipeline experiment: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc models on RTX A5000 (~1 day). Performed inference for both voice conversion and singing voice conversion.",
+      partner: "Personal Project",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
+    },
+    {
       name: "Video Story Understanding-based QA System",
       description:
         "Modified Kaldi's sentence-level decoder to achieve sub-1.0 RT for real-time video QA applications. Collected and curated domain-specific audio/text corpora to optimize acoustic and language models.",
