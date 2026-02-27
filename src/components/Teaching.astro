@@ -1,0 +1,87 @@
+---
+import { siteConfig } from "../config";
+const hasTeaching = siteConfig.teaching && siteConfig.teaching.length > 0;
+---
+
+{
+  hasTeaching && (
+    <section id="teaching" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-white dark:bg-slate-900">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900 dark:text-gray-100">
+              Teaching
+            </h2>
+            <div
+              class="w-[75px] h-[5px] mt-2 rounded-full"
+              style={`background-color: ${siteConfig.accentColor}`}
+            />
+            <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              Teaching Assistant Experience
+            </p>
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="space-y-5">
+              {siteConfig.teaching.map((item) => (
+                <div class="bg-gray-50 dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 p-5 hover:shadow-md dark:hover:shadow-slate-900/50 transition-all duration-300">
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
+                    <div>
+                      <div class="flex flex-wrap items-center gap-2 mb-1">
+                        <span
+                          class="text-xs font-bold px-2 py-0.5 rounded text-white"
+                          style={`background-color: ${siteConfig.accentColor}`}
+                        >
+                          {item.role}
+                        </span>
+                        <span class="text-xs text-gray-500 dark:text-gray-400 font-mono">
+                          {item.course}
+                        </span>
+                      </div>
+                      <h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100 leading-snug">
+                        {item.title}
+                      </h3>
+                    </div>
+                    <span class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                      {item.semester}
+                    </span>
+                  </div>
+
+                  <div class="flex items-center gap-1.5 mb-2 text-sm" style={`color: ${siteConfig.accentColor}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    </svg>
+                    <span>
+                      {item.school}
+                      {item.instructor && <span class="text-gray-500 dark:text-gray-400"> · {item.instructor}</span>}
+                    </span>
+                  </div>
+
+                  <p class="text-sm text-gray-600 dark:text-gray-300 mb-3 leading-relaxed">
+                    {item.description}
+                  </p>
+
+                  {item.github && (
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg border transition-all duration-200 hover:scale-105"
+                      style={`border-color: ${siteConfig.accentColor}; color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}10`}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 00-.1 3.2 4.6 4.6 0 00-1.3 3.2c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" />
+                      </svg>
+                      Lab Materials
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
