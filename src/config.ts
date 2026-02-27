@@ -293,9 +293,9 @@ export const siteConfig = {
       role: "Teaching Assistant",
       course: "Samsung AI Academy",
       title: "Deep Learning-based Automatic Speech Recognition",
-      instructor: "",
-      school: "Samsung Electronics",
-      description: "Hands-on ASR tutorial covering audio handling, MLP, CTC, Whisper, NVIDIA NeMo finetuning, and WFST using PyTorch & Colab notebooks.",
+      instructor: "Prof. Ji-Hwan Kim",
+      school: "Sogang University × Samsung Electronics",
+      description: "Hands-on ASR tutorial (invited lecture by Prof. Ji-Hwan Kim) covering audio handling, MLP, CTC, Whisper, NVIDIA NeMo finetuning, and WFST using PyTorch & Colab notebooks.",
       github: "https://github.com/june-oh/2023_AI_Academy_ASR",
     },
     {
