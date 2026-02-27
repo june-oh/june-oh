@@ -213,6 +213,7 @@ export const siteConfig = {
         venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",
         year: "2026",
         note: "Accepted, Oral",
+        link: "/june-oh/papers/pakdd2026_adapter_only_asr.pdf",
       },
       {
         authors: "J. Oh and J.-H. Kim",
@@ -220,6 +221,7 @@ export const siteConfig = {
         venue: "Findings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
         year: "2026",
         note: "Accepted",
+        link: "/june-oh/papers/eacl2026_seam.pdf",
       },
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
