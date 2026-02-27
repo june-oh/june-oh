@@ -262,6 +262,7 @@ export const siteConfig = {
         year: "2024",
         volume: "vol. 42, no. 4, pp. 45–56",
         note: "KCI",
+        link: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11753245",
       },
       {
         authors: "H. Park, Y. Kang, M. Lim, D. Lee, J. Oh, and J.-H. Kim",
