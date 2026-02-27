@@ -306,8 +306,8 @@ export const siteConfig = {
       title: "Audio Recognition, Synthesis & Transformation (오디오인식 및 합성변환)",
       instructor: "Prof. Ji-Hwan Kim",
       school: "Sogang University",
-      description: "Lab sessions covering audio processing, deep learning basics, language models, and FastSpeech2 TTS using PyTorch & Colab.",
-      github: "https://github.com/june-oh/2024_cseg109",
+      description: "Lab sessions covering audio processing, PyTorch, RNN, CNN, Seq2Seq, and FastSpeech2/VocGAN TTS using PyTorch & Colab.",
+      github: "https://github.com/june-oh/cseg109",
     },
     {
       year: "2022",
