@@ -237,6 +237,7 @@ export const siteConfig = {
         venue: "Proc. APIC-IST 2023",
         year: "2023",
         volume: "pp. 236–237",
+        link: "/june-oh/papers/apicist2023_dysarthria_oh.pdf",
       },
       {
         authors: "M. Kim, J. Oh, and J.-H. Kim",
@@ -244,6 +245,7 @@ export const siteConfig = {
         venue: "Proc. APIC-IST 2023",
         year: "2023",
         volume: "pp. 12–13",
+        link: "/june-oh/papers/apicist2023_dysarthria_kim.pdf",
       },
       {
         authors: "S. Seo, M. Lim, D. Lee, H. Park, J. Oh, D. J. Rim, and J.-H. Kim",
