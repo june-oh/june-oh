@@ -1,5 +1,6 @@
 ---
-import { siteConfig } from "../config";
+import { getConfig } from "../i18n";
+const siteConfig = getConfig(Astro.url);
 ---
 
 <div

@@ -1,5 +1,9 @@
 ---
-import { siteConfig } from "../config";
+import { getConfig, getLang, getAltLangUrl } from "../i18n";
+const siteConfig = getConfig(Astro.url);
+const lang = getLang(Astro.url);
+const altLangUrl = getAltLangUrl(Astro.url);
+const altLangLabel = lang === "ko" ? "EN" : "KO";
 
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
@@ -80,6 +84,15 @@ const navItems = [
           class="absolute top-0.5 left-0.5 w-4 h-4 sm:w-5 sm:h-5 bg-white rounded-full shadow-md transform transition-transform duration-300"
         ></span>
       </button>
+      
+      <!-- Language toggle -->
+      <a
+        href={altLangUrl}
+        class="ml-2 px-2 py-1 text-xs font-bold rounded border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors"
+        title={lang === "ko" ? "Switch to English" : "한국어로 보기"}
+      >
+        {altLangLabel}
+      </a>
     </div>
   </nav>
   
