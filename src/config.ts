@@ -234,7 +234,7 @@ export const siteConfig = {
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
         title: "Speech Intelligibility Prediction of Dysarthria Using Deep Convolutional Networks",
-        venue: "Proc. APIC-IST 2023",
+        venue: "Proc. Asia Pacific International Conference on Information Science and Technology (APIC-IST)",
         year: "2023",
         volume: "pp. 236–237",
         link: "/june-oh/papers/apicist2023_dysarthria_oh.pdf",
@@ -242,7 +242,7 @@ export const siteConfig = {
       {
         authors: "M. Kim, J. Oh, and J.-H. Kim",
         title: "Automated Dysarthria Severity Classification Using Diadochokinetic test and Speech Intelligibility Based on LightGBM",
-        venue: "Proc. APIC-IST 2023",
+        venue: "Proc. Asia Pacific International Conference on Information Science and Technology (APIC-IST)",
         year: "2023",
         volume: "pp. 12–13",
         link: "/june-oh/papers/apicist2023_dysarthria_kim.pdf",
