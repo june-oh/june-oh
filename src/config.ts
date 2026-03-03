@@ -38,30 +38,38 @@ export const siteConfig = {
       name: "Adapter-Only Speech-LLM Bridging (PhD Dissertation)",
       description:
         "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Accepted (Oral).",
-      partner: "MSIT / IITP",
+      partner: "",
       period: "Oct 2025 - Present",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
+      name: "Voice/Singing Conversion (SVC)",
+      description:
+        "End-to-end SVC pipeline: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc on RTX A5000. Performed voice conversion and singing voice conversion inference.",
+      partner: "Personal Project",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
+    },
+    {
       name: "SEAM: Temporal-Semantic Bridging for Speech-LLM",
       description:
-        "Encoder-decoder architecture with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. Achieves 2.6%/5.2% WER on LibriSpeech and 4.7% on TED-LIUM-v2. EACL 2026 Findings.",
-      partner: "MSIT / IITP",
+        "Encoder-decoder with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. 2.6%/5.2% WER on LibriSpeech, 4.7% on cross-domain TED-LIUM-v2. EACL 2026 Findings Accepted.",
+      partner: "",
       period: "May 2025 - Jan 2026",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
     },
     {
-      name: "End-to-End Korean ASR for Gaming",
+      name: "End-to-End Korean ASR",
       description:
-        "Developed a universal Korean ASR system using hybrid FastConformer RNN-Transducer + CTC model with cache-aware streaming and context biasing for gaming terminology.",
+        "Developed universal Korean ASR using hybrid FastConformer RNNT+CTC. Implemented cache-aware streaming for low-latency inference and context biasing for gaming domain vocabulary.",
       partner: "Smilegate",
       period: "2024 - Apr 2025",
       skills: ["NVIDIA NeMo", "FastConformer", "RNNT", "CTC"],
     },
     {
-      name: "Telephony ASR System",
+      name: "Telephony (8kHz) End-to-End ASR",
       description:
-        "Developed streaming and non-streaming Korean ASR pipelines optimized for 8 kHz telephony data using FastConformer-CTC architecture with context-biasing modules.",
+        "Developed streaming/non-streaming Korean ASR pipelines optimized for 8 kHz telephony using FastConformer-CTC. Implemented dynamic context biasing for domain-shift word-level accuracy.",
       partner: "LOTTE INNOVATE",
       period: "Apr 2024 - Dec 2024",
       skills: ["FastConformer", "CTC", "Streaming ASR"],
@@ -69,47 +77,39 @@ export const siteConfig = {
     {
       name: "Automated Korean Speaking Assessment (2024)",
       description:
-        "Multi-task learning framework using Wav2Vec to jointly model pronunciation, fluency, and content for L2-Korean assessment, integrated with Conformer-CTC ASR and LLM for automated multi-aspect scoring.",
+        "Wav2Vec multi-task framework for L2-Korean assessment: jointly models pronunciation, fluency, and content. Combined Conformer-CTC ASR with LLaMa for multi-aspect automated scoring.",
       partner: "Ministry of Culture, Sports and Tourism",
       period: "May 2024 - Dec 2024",
-      skills: ["Wav2Vec", "Conformer", "LLM"],
+      skills: ["Wav2Vec", "Conformer", "LLaMa"],
     },
     {
-      name: "Automated Korean Speaking Assessment (2023)",
+      name: "Dialog-based Multi-modal Explainable AI for Dysarthria",
       description:
-        "Built an end-to-end evaluation pipeline for L2 Korean speakers by combining Conformer-CTC ASR outputs with BERT-based semantic scoring. Developed algorithms to quantify pronunciation accuracy, speech rate, and syntactic correctness.",
-      partner: "Ministry of Culture, Sports and Tourism",
-      period: "May 2023 - Dec 2023",
-      skills: ["Conformer", "CTC", "BERT"],
-    },
-    {
-      name: "Dialog-based Multi-modal Explainable AI",
-      description:
-        "AI-based framework for dysarthria severity classification, providing multi-modal explanations to support diagnostic decision-making.",
+        "AI framework for dysarthria severity classification with multi-modal explanations. Implemented speech-based explainable diagnostic modules analyzing acoustic and linguistic features.",
       partner: "MSIT / IITP",
       period: "Apr 2022 - Present",
       skills: ["Explainable AI", "Multi-modal", "Speech Analysis"],
     },
     {
-      name: "Intelligent Audio Content Rating",
+      name: "Intelligent Video Content Rating",
       description:
-        "Led audio analytics submodule within automated video content rating framework. Fine-tuned Whisper ASR for domain-specific video corpora.",
+        "Designed sound event detection models for automated video content rating. Fine-tuned Whisper ASR on domain-specific video corpora for robust transcription in diverse acoustic environments.",
       partner: "MSIT",
       period: "2022 - 2024",
       skills: ["Whisper", "Sound Event Detection", "Fine-tuning"],
     },
     {
-      name: "Voice/Singing Conversion: so-vits-svc & whisper-vits-svc",
+      name: "Automated Korean Speaking Assessment (2023)",
       description:
-        "End-to-end SVC pipeline experiment: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc models on RTX A5000 (~1 day). Performed inference for both voice conversion and singing voice conversion.",
-      partner: "Personal Project",
-      period: "2025",
-      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
+        "Built L2-Korean evaluation pipeline combining Conformer-CTC ASR with BERT-based semantic scoring. Developed algorithms to quantify pronunciation accuracy, speech rate, and syntactic correctness.",
+      partner: "Ministry of Culture, Sports and Tourism",
+      period: "May 2023 - Dec 2023",
+      skills: ["Conformer", "CTC", "BERT"],
     },
     {
-      name: "Video Story Understanding-based QA System",
+      name: "Video Story Understanding QA System",
       description:
-        "Modified Kaldi's sentence-level decoder to achieve sub-1.0 RT for real-time video QA applications. Collected and curated domain-specific audio/text corpora to optimize acoustic and language models.",
+        "Modified Kaldi sentence-level decoder for sub-1.0 RT real-time video QA. Collected domain-specific audio/text corpora, retrained acoustic/language models for improved QA accuracy on complex narratives.",
       partner: "MSIT",
       period: "Sep 2017 - Dec 2019",
       skills: ["Kaldi", "Language Model", "Real-time ASR"],
