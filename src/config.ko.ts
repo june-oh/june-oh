@@ -21,20 +21,20 @@ export const siteConfig = {
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
-      name: "음성/가창 변환 (SVC)",
-      description:
-        "so-vits-svc 및 whisper-vits-svc를 활용한 End-to-end SVC 파이프라인. 약 10시간 화자 데이터 수집, UVR5 보컬 추출, RTX A5000 학습. 음성 변환 및 가창 변환 추론 수행.",
-      partner: "개인 프로젝트",
-      period: "2025",
-      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
-    },
-    {
       name: "SEAM: 음성–LLM 시간의미론적 정렬",
       description:
         "교차 어텐션 기반 가변 속도 생성 인코더-디코더 모듈. 음성 인코더 동결 + LLM LoRA. LibriSpeech 2.6%/5.2% WER, 교차 도메인 TED-LIUM-v2 4.7% WER 달성. EACL 2026 Findings Accepted.",
       partner: "",
       period: "2025.05 - 2026.01",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
+    },
+    {
+      name: "음성/가창 변환 (SVC)",
+      description:
+        "so-vits-svc 및 whisper-vits-svc를 활용한 End-to-end SVC 파이프라인. 약 10시간 화자 데이터 수집, UVR5 보컬 추출, RTX A5000 학습. 음성 변환 및 가창 변환 추론 수행.",
+      partner: "개인 프로젝트",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
     },
     {
       name: "End-to-End 한국어 음성인식 프로젝트",

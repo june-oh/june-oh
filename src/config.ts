@@ -43,20 +43,20 @@ export const siteConfig = {
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
-      name: "Voice/Singing Conversion (SVC)",
-      description:
-        "End-to-end SVC pipeline: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc on RTX A5000. Performed voice conversion and singing voice conversion inference.",
-      partner: "Personal Project",
-      period: "2025",
-      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
-    },
-    {
       name: "SEAM: Temporal-Semantic Bridging for Speech-LLM",
       description:
         "Encoder-decoder with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. 2.6%/5.2% WER on LibriSpeech, 4.7% on cross-domain TED-LIUM-v2. EACL 2026 Findings Accepted.",
       partner: "",
       period: "May 2025 - Jan 2026",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
+    },
+    {
+      name: "Voice/Singing Conversion (SVC)",
+      description:
+        "End-to-end SVC pipeline: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc on RTX A5000. Performed voice conversion and singing voice conversion inference.",
+      partner: "Personal Project",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
     },
     {
       name: "End-to-End Korean ASR",
