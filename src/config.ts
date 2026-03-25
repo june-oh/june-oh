@@ -229,7 +229,6 @@ export const siteConfig = {
         venue: "Findings of the Association for Computational Linguistics: EACL 2026",
         year: "2026",
         volume: "pp. 2135–2144",
-        note: "Accepted",
         link: "https://aclanthology.org/2026.findings-eacl.112/",
       },
       {
