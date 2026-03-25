@@ -225,11 +225,12 @@ export const siteConfig = {
       },
       {
         authors: "J. Oh and J.-H. Kim",
-        title: "SEAM: Bridging the Semantic-Temporal Granularity Gap for LLM-based Speech Recognition",
-        venue: "Findings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
+        title: "SEAM: Bridging the Temporal-Semantic Granularity Gap for LLM-based Speech Recognition",
+        venue: "Findings of the Association for Computational Linguistics: EACL 2026",
         year: "2026",
+        volume: "pp. 2135–2144",
         note: "Accepted",
-        link: "/june-oh/papers/eacl2026_seam.pdf",
+        link: "https://aclanthology.org/2026.findings-eacl.112/",
       },
       {
         authors: "J. Oh, H. Park, and J.-H. Kim",
