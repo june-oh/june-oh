@@ -2,6 +2,10 @@ import { siteConfig as enConfig } from "./config";
 
 export const siteConfig = {
   ...enConfig,
+  social: {
+    ...enConfig.social,
+    cv: "/june-oh/cv_ko.pdf",
+  },
   title: "서강대학교 컴퓨터공학과 박사과정 수료",
   description: "음성 인식 & AI 연구자 | 서강대학교",
   aboutMe:
