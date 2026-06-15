@@ -6,11 +6,24 @@
 \documentclass[a4paper,9pt]{extarticle}
 
 \usepackage{kotex}
-\setmainhangulfont{Pretendard}[
-  BoldFont = {Pretendard Bold},
-  ItalicFont = {Pretendard Regular},
-  BoldItalicFont = {Pretendard Bold},
-]
+\usepackage{fontspec}
+
+\newenvironment{kotext}{%
+  \begingroup
+  \setmainfont{Pretendard}[
+    BoldFont = {Pretendard Bold},
+    ItalicFont = {Pretendard Regular},
+    BoldItalicFont = {Pretendard Bold},
+  ]
+  \setmainhangulfont{Pretendard}[
+    BoldFont = {Pretendard Bold},
+    ItalicFont = {Pretendard Regular},
+    BoldItalicFont = {Pretendard Bold},
+  ]
+}{%
+  \endgroup
+}
+\newcommand{\koline}[1]{\begin{kotext}#1\end{kotext}}
 \usepackage{geometry}
 \geometry{a4paper, top=0.85in, bottom=0.85in, left=0.9in, right=0.9in}
 \usepackage{tabularx}
@@ -77,6 +90,17 @@
     #4
   \end{itemize}
   \vspace{0.25em}
+}
+
+\newcommand{\teachingentry}[5]{%
+  \vspace{0.5em}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
+    \entrytitle{#1} & \textit{#2} \\
+  \end{tabularx}
+  \noindent\textit{#3} \textbar{} #4\par
+  \noindent #5\par
+  \vspace{0.35em}
 }
 
 \begin{document}
@@ -157,20 +181,26 @@
 
 \subsection*{Domestic Journal}
 \begin{blockitems}
-  \item 이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, \me{오준석}, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]
+  \item \koline{이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, \me{오준석}, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]}
   \item H. Park, Y. Kang, M. Lim, D. Lee, \me{J. Oh}, and J.-H. Kim, ``LFMMI-based acoustic modeling by using external knowledge,'' \textit{The Journal of the Acoustical Society of Korea}, vol.~38, no.~5, pp.~607--613, 2019. [KSCI/KCI]
 \end{blockitems}
 
 \section*{Awards}
 \begin{blockitems}
-  \item \textbf{2023 한국어 AI 경진대회} (NIA) --- Track2-1, 상담 음성인식: 오준석, 김민서, 남주형 (team ``상담ONE''), 장려상
-  \item \textbf{2022 한국어 인공지능 경진대회} (NIA) --- 기업현안(회의음성): 오준석, 김하영 (team ``SGCSE''), 최우수상/네이버 대표 (1위)
-  \item \textbf{2021 음절인식률 측정 알고리즘 개발 대회} (KT alpha) --- 박호성, 오준석, 조은수 (team ``검은사케동''), 최우수상 (1위)
+  \item \koline{\textbf{2023 한국어 AI 경진대회} (NIA) --- Track2-1, 상담 음성인식: 오준석, 김민서, 남주형 (team ``상담ONE''), 장려상}
+  \item \koline{\textbf{2022 한국어 인공지능 경진대회} (NIA) --- 기업현안(회의음성): 오준석, 김하영 (team ``SGCSE''), 최우수상/네이버 대표 (1위)}
+  \item \koline{\textbf{2021 음절인식률 측정 알고리즘 개발 대회} (KT alpha) --- 박호성, 오준석, 조은수 (team ``검은사케동''), 최우수상 (1위)}
 \end{blockitems}
+
+\section*{Teaching}
+\teachingentry{Audio Recognition, Synthesis \& Transformation}{Fall 2024}{Teaching Assistant}{CSE5109/CSEG109/AIEG109/AIE5109 \textbar{} Sogang University \textbar{} Prof.\ Ji-Hwan Kim}{Led lab sessions on audio processing, deep learning basics, language models, and FastSpeech2 TTS using PyTorch and Colab.}
+\teachingentry{Deep Learning-based Automatic Speech Recognition}{Summer 2023}{Teaching Assistant}{Samsung AI Academy \textbar{} Sogang University $\times$ Samsung Electronics \textbar{} Prof.\ Ji-Hwan Kim}{Hands-on ASR tutorial covering audio handling, MLP, CTC, Whisper, NVIDIA NeMo fine-tuning, and WFST using PyTorch and Colab notebooks.}
+\teachingentry{Audio Recognition, Synthesis \& Transformation}{Fall 2023}{Teaching Assistant}{CSE5109/CSEG109/AIEG109/AIE5109 \textbar{} Sogang University \textbar{} Prof.\ Ji-Hwan Kim}{Led lab sessions on audio processing, PyTorch, RNN/CNN/Seq2Seq, and FastSpeech2/VocGAN TTS using PyTorch and Colab.}
+\teachingentry{Conversational User Interface}{Spring/Fall 2022}{Teaching Assistant}{CSE5311/CSEG311/GITA370 \textbar{} Sogang University \textbar{} Prof.\ Ji-Hwan Kim}{Led lab sessions on dialogue systems and conversational AI interface design.}
 
 \section*{Patents}
 \begin{blockitems}
-  \item KR 10-2699607 (B1) --- \textit{Corpus Construction Service Provision Server and Method} (코퍼스 구축 서비스 제공 서버 및 방법).\\
+  \item KR 10-2699607 (B1) --- \textit{Corpus Construction Service Provision Server and Method} \koline{(코퍼스 구축 서비스 제공 서버 및 방법).}\\
   Inventors: Ji-Hwan Kim; Junseok Oh; Hosung Park.\\
   Assignee: Sogang University Industry--Academic Cooperation Foundation.\\
   Filed: Apr 29, 2020 (KR 10-2020-0052570); Published: Nov 8, 2021 (KR 10-2021-0133667); Granted: Aug 22, 2024; Gazette: Aug 26, 2024.

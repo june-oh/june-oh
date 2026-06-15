@@ -6,11 +6,44 @@
 \documentclass[a4paper,9pt]{extarticle}
 
 \usepackage{kotex}
-\setmainhangulfont{Pretendard}[
-  BoldFont = {Pretendard Bold},
-  ItalicFont = {Pretendard Regular},
-  BoldItalicFont = {Pretendard Bold},
-]
+\usepackage{fontspec}
+
+\newcommand{\setseriffonts}{%
+  \setmainfont{lmroman10-regular.otf}[
+    BoldFont = lmroman10-bold.otf,
+    ItalicFont = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+  ]%
+  \setmainhangulfont{lmroman10-regular.otf}[
+    BoldFont = lmroman10-bold.otf,
+    ItalicFont = lmroman10-italic.otf,
+    BoldItalicFont = lmroman10-bolditalic.otf,
+  ]%
+}
+\newcommand{\setpretendardfonts}{%
+  \setmainfont{Pretendard}[
+    BoldFont = {Pretendard Bold},
+    ItalicFont = {Pretendard Regular},
+    BoldItalicFont = {Pretendard Bold},
+  ]%
+  \setmainhangulfont{Pretendard}[
+    BoldFont = {Pretendard Bold},
+    ItalicFont = {Pretendard Regular},
+    BoldItalicFont = {Pretendard Bold},
+  ]%
+}
+\setpretendardfonts
+
+\newenvironment{latinblock}{%
+  \begingroup\setseriffonts
+}{%
+  \endgroup
+}
+\newenvironment{kotext}{%
+  \begingroup\setpretendardfonts
+}{%
+  \endgroup
+}
 \usepackage{geometry}
 \geometry{a4paper, top=0.8in, bottom=0.8in, left=0.9in, right=0.9in}
 \usepackage{tabularx}
@@ -50,11 +83,14 @@
 
 \newcommand{\cvheader}[1]{%
   \begin{center}
-    {\LARGE\bfseries Junseok Oh (오준석)}\\[0.55em]
-    {\normalsize #1}\\[0.75em]
+    \begin{kotext}{\LARGE\bfseries 오준석}\end{kotext}\ %
+    \begin{latinblock}{\LARGE\bfseries (Junseok Oh)}\end{latinblock}\\[0.55em]
+    \begin{kotext}{\normalsize #1}\end{kotext}\\[0.75em]
+    \begin{latinblock}
     (+82) 010-6640-0875 \;$|$\;
     \href{mailto:ohjs@sogang.ac.kr}{ohjs@sogang.ac.kr} \;$|$\;
     \href{https://june-oh.github.io/june-oh/}{june-oh.github.io/june-oh}
+    \end{latinblock}
   \end{center}
   \vspace{0.5em}
 }
@@ -79,6 +115,17 @@
     #4
   \end{itemize}
   \vspace{0.3em}
+}
+
+\newcommand{\teachingentry}[5]{%
+  \vspace{0.55em}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
+    \entrytitle{#1} & \textit{#2} \\
+  \end{tabularx}
+  \noindent\textit{#3} \textbar{} #4\par
+  \noindent #5\par
+  \vspace{0.35em}
 }
 
 \begin{document}
@@ -138,6 +185,7 @@
 }
 
 \section*{논문}
+\begin{latinblock}
 \subsection*{International Journal}
 \begin{blockitems}
   \item \me{J. Oh}, J. Nam, and J.-H. Kim, ``HiTCA: Fusing Hierarchical Text and Contextual Audio for Accurate VCR,'' \textit{EURASIP Journal on Audio, Speech, and Music Processing}, under review. [SCIE]
@@ -159,8 +207,12 @@
 
 \subsection*{Domestic Journal}
 \begin{blockitems}
-  \item 이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, \me{오준석}, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]
   \item H. Park, Y. Kang, M. Lim, D. Lee, \me{J. Oh}, and J.-H. Kim, ``LFMMI-based acoustic modeling by using external knowledge,'' \textit{The Journal of the Acoustical Society of Korea}, vol.~38, no.~5, pp.~607--613, 2019. [KSCI/KCI]
+\end{blockitems}
+\end{latinblock}
+
+\begin{blockitems}
+  \item 이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, \me{오준석}, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]
 \end{blockitems}
 
 \section*{수상}
@@ -169,6 +221,12 @@
   \item \textbf{2022 한국어 인공지능 경진대회} (한국지능정보사회진흥원, NIA) --- 기업현안(회의음성): 오준석, 김하영 (team ``SGCSE''), 최우수상/네이버 대표 (1위)
   \item \textbf{2021 음절인식률 측정 알고리즘 개발 대회} (KT alpha) --- 박호성, 오준석, 조은수 (team ``검은사케동''), 최우수상 (1위)
 \end{blockitems}
+
+\section*{강의 조교}
+\teachingentry{생성형 AI 기반 오디오인식 및 합성/변환}{2024년 2학기}{강의 조교}{CSE5109/CSEG109/AIEG109/AIE5109 \textbar{} 서강대학교 \textbar{} 김지환 교수}{오디오 처리, 딥러닝 기초, 언어 모델, FastSpeech2 TTS 실습 (PyTorch, Colab).}
+\teachingentry{딥러닝 기반 자동 음성 인식}{2023년 여름}{강의 조교}{Samsung AI Academy \textbar{} 서강대학교 $\times$ 삼성전자 \textbar{} 김지환 교수}{김지환 교수 초청 강의 조교. 오디오 처리, MLP, CTC, Whisper, NeMo 파인튜닝, WFST 실습 (PyTorch, Colab).}
+\teachingentry{오디오인식 및 합성변환}{2023년 2학기}{강의 조교}{CSE5109/CSEG109/AIEG109/AIE5109 \textbar{} 서강대학교 \textbar{} 김지환 교수}{오디오 처리, PyTorch, RNN/CNN/Seq2Seq, FastSpeech2/VocGAN TTS 실습 (PyTorch, Colab).}
+\teachingentry{대화형 사용자 인터페이스개론}{2022년}{강의 조교}{CSE5311/CSEG311/GITA370 \textbar{} 서강대학교 \textbar{} 김지환 교수}{대화 시스템 및 대화형 AI 인터페이스 설계 실습.}
 
 \section*{특허}
 \begin{blockitems}
@@ -179,11 +237,14 @@
 \end{blockitems}
 
 \section*{자격증}
+\begin{latinblock}
 \begin{blockitems}
   \item NVIDIA Deep Learning Institute Certificate, \textit{Building Conversational AI Applications}, 2022
 \end{blockitems}
+\end{latinblock}
 
 \section*{기술 역량}
+\begin{latinblock}
 \noindent
 \begin{tabular}{@{}p{0.46\textwidth}@{\hspace{0.04\textwidth}}p{0.46\textwidth}@{}}
   \textbf{Programming Languages \& Scripting} & Python \\
@@ -191,5 +252,6 @@
   \textbf{E2E ASR Toolkits} & Kaldi \\
   \textbf{Other Tools \& Libraries} & KenLM \\
 \end{tabular}
+\end{latinblock}
 
 \end{document}
