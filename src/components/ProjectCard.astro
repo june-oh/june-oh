@@ -1,0 +1,90 @@
+---
+interface Props {
+  project: {
+    name: string;
+    description: string;
+    period?: string;
+    partner?: string;
+    skills?: string[];
+    paper?: string;
+  };
+  index: number;
+  accent?: boolean;
+  accentColor: string;
+  partnerLabel: string;
+  paperLabel: string;
+}
+
+const { project, index, accent = false, accentColor, partnerLabel, paperLabel } = Astro.props;
+---
+
+<div
+  class:list={[
+    "relative p-4 sm:p-6 md:p-8 bg-white dark:bg-slate-900 rounded-xl sm:rounded-2xl border transition-all duration-300",
+    accent
+      ? "border-2 hover:shadow-lg dark:hover:shadow-slate-900/50"
+      : "border-gray-200 dark:border-slate-700 hover:shadow-lg dark:hover:shadow-slate-900/50 hover:border-gray-300 dark:hover:border-slate-600",
+  ]}
+  style={accent ? `border-color: ${accentColor}40` : undefined}
+>
+  <div class="space-y-4">
+    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+      <div>
+        <span class="text-sm font-mono" style={{ color: accentColor }}>
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 mt-1">
+          {project.name}
+        </h3>
+      </div>
+      {project.period && (
+        <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+          {project.period}
+        </span>
+      )}
+    </div>
+
+    {project.partner && (
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">
+          {partnerLabel}:
+        </span>
+        <span
+          class="text-sm font-medium px-2 py-0.5 rounded"
+          style={`background-color: ${accentColor}15; color: ${accentColor}`}
+        >
+          {project.partner}
+        </span>
+      </div>
+    )}
+
+    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+      {project.description}
+    </p>
+
+    <div class="flex flex-wrap items-center gap-2 pt-1">
+      {project.paper && (
+        <a
+          href={project.paper}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold text-white transition-opacity hover:opacity-90"
+          style={`background-color: ${accentColor}`}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+            <path d="M11 13l9 -9" />
+            <path d="M15 4h5v5" />
+          </svg>
+          {paperLabel}
+        </a>
+      )}
+      {project.skills?.map((skill) => (
+        <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-gray-900 dark:bg-slate-700 text-white dark:text-gray-200 rounded-md sm:rounded-lg text-xs sm:text-sm font-medium">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>

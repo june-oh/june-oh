@@ -123,6 +123,13 @@ const siteConfig = getConfig(Astro.url);
       >
         {siteConfig.title}
       </p>
+      {siteConfig.subtitle && (
+        <p
+          class="mt-2 sm:mt-3 text-pretty text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-500 animate-fade-in animation-delay-400"
+        >
+          {siteConfig.subtitle}
+        </p>
+      )}
       {siteConfig.social?.cv && (
         <a
           href={siteConfig.social.cv}

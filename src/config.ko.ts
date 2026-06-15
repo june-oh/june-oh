@@ -6,10 +6,11 @@ export const siteConfig = {
     ...enConfig.social,
     cv: "/june-oh/cv_ko.pdf",
   },
-  title: "서강대학교 컴퓨터공학과 박사 (2026.08 졸업 예정)",
-  description: "음성 인식 & AI 연구자 | 서강대학교",
+  title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
+  subtitle: "서강대학교 컴퓨터공학과 박사과정 · 2026.08 졸업 예정",
+  description: "End-to-End ASR, Speech-LLM, 프로덕션 음성 AI 시스템 전문",
   aboutMe:
-    "서강대학교 컴퓨터공학과 박사과정 (2026.08 졸업 예정, 지도교수: 김지환). 주요 연구 분야는 End-to-End 음성 인식(ASR), 음성 분석 및 평가, 문맥 인식 및 도메인 특화 ASR, 대규모 언어 모델(LLM)과 음성 기술의 통합입니다. 강건한 저지연 스트리밍 ASR 시스템 개발과 자동 말하기 평가 프레임워크 구축에 주력하고 있습니다.",
+    "스트리밍 한국어 ASR부터 Speech-LLM 통합, 자동 말하기 평가까지 End-to-End 음성 AI 시스템을 설계·구현합니다. 박사 학위논문에서는 동결된 Whisper와 Gemma를 경량 어댑터만으로 연결하는 방식(PAKDD 2026, Oral)을 제안했고, 학술 강연 도메인에서 26.8% 상대 WER 감소를 달성했습니다. 서강대학교 박사과정을 수료 중이며(2026.08 졸업 예정), Speech AI 엔지니어 및 리서치 엔지니어 포지션에 관심이 있습니다.",
   researchAreas: [
     { category: "음성 인식", items: ["스트리밍 ASR", "강건 ASR", "컨텍스트 바이어싱", "도메인 적응"] },
     { category: "Speech + LLM", items: ["Speech LLM", "LLM 기반 ASR", "멀티모달 AI"] },
@@ -23,22 +24,18 @@ export const siteConfig = {
       partner: "",
       period: "2025.10 - 2026.08",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
+      featured: true,
+      paper: "https://doi.org/10.1007/978-981-92-1468-6_15",
     },
     {
       name: "SEAM: 음성–LLM 시간의미론적 정렬",
       description:
-        "교차 어텐션 기반 가변 속도 생성 인코더-디코더 모듈. 음성 인코더 동결 + LLM LoRA. LibriSpeech 2.6%/5.2% WER, 교차 도메인 TED-LIUM-v2 4.7% WER 달성. EACL 2026 Findings Accepted.",
+        "교차 어텐션 기반 가변 속도 생성 인코더-디코더 모듈. 음성 인코더 동결 + LLM LoRA. LibriSpeech 2.6%/5.2% WER, 교차 도메인 TED-LIUM-v2 4.7% WER 달성. EACL 2026 Findings 게재.",
       partner: "",
       period: "2025.05 - 2026.01",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
-    },
-    {
-      name: "음성/가창 변환 (SVC)",
-      description:
-        "so-vits-svc 및 whisper-vits-svc를 활용한 End-to-end SVC 파이프라인. 약 10시간 화자 데이터 수집, UVR5 보컬 추출, RTX A5000 학습. 음성 변환 및 가창 변환 추론 수행.",
-      partner: "개인 프로젝트",
-      period: "2025",
-      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
+      featured: true,
+      paper: "https://aclanthology.org/2026.findings-eacl.112/",
     },
     {
       name: "End-to-End 한국어 음성인식 프로젝트",
@@ -47,6 +44,15 @@ export const siteConfig = {
       partner: "산학협력: 스마일게이트",
       period: "2024 - 2025.04",
       skills: ["NVIDIA NeMo", "FastConformer", "RNNT", "CTC"],
+      featured: true,
+    },
+    {
+      name: "음성/가창 변환 (SVC)",
+      description:
+        "so-vits-svc 및 whisper-vits-svc를 활용한 End-to-end SVC 파이프라인. 약 10시간 화자 데이터 수집, UVR5 보컬 추출, RTX A5000 학습. 음성 변환 및 가창 변환 추론 수행.",
+      partner: "개인 프로젝트",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
     },
     {
       name: "전화망(8kHz) 환경 End-to-End 음성인식",

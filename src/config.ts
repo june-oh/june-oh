@@ -3,8 +3,9 @@ export const siteConfig = {
   nickname: "june-oh / RiceBerry",
   // Author name patterns to highlight in publications
   authorHighlight: ["J. Oh", "오준석"],
-  title: "Ph.D. Candidate in Computer Science and Engineering (Expected Aug 2026)",
-  description: "Speech Recognition & AI Researcher at Sogang University",
+  title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
+  subtitle: "Ph.D. Candidate, Sogang University · Available Aug 2026",
+  description: "Speech AI Engineer specializing in End-to-End ASR, Speech-LLM, and production speech systems",
   accentColor: "#0ea5e9", // sky-500 for a clean, professional feel
   social: {
     email: "ohjs@sogang.ac.kr",
@@ -14,7 +15,7 @@ export const siteConfig = {
     cv: "/june-oh/cv_en.pdf",
   },
   aboutMe:
-    "I am a Ph.D. candidate in Computer Science and Engineering at Sogang University, advised by Prof. Ji-Hwan Kim. My research focuses on End-to-End Automatic Speech Recognition (ASR), Speech Analytics & Assessment, Context-aware & Domain-specific ASR, and the integration of Large Language Models (LLMs) in Speech Technology. I am passionate about building robust, low-latency streaming ASR systems and developing automated speaking assessment frameworks.",
+    "I build end-to-end speech AI systems—from streaming Korean ASR to Speech-LLM integration and automated speaking assessment. For my Ph.D. dissertation, I developed adapter-only bridging between frozen Whisper and Gemma (PAKDD 2026, Oral), achieving 26.8% relative WER reduction on academic lecture domains with inference-time domain prompting. I am completing my doctorate at Sogang University (expected Aug 2026) and am open to speech AI engineer and research engineer roles.",
   // Skill icons from skillicons.dev (general programming tools)
   skillIcons: ["py", "c", "pytorch", "linux", "bash", "git", "github", "gitlab", "docker", "vscode"],
   // Speech/ML specific tools (displayed as text badges)
@@ -41,22 +42,18 @@ export const siteConfig = {
       partner: "",
       period: "Oct 2025 - Aug 2026",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
+      featured: true,
+      paper: "https://doi.org/10.1007/978-981-92-1468-6_15",
     },
     {
       name: "SEAM: Temporal-Semantic Bridging for Speech-LLM",
       description:
-        "Encoder-decoder with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. 2.6%/5.2% WER on LibriSpeech, 4.7% on cross-domain TED-LIUM-v2. EACL 2026 Findings Accepted.",
+        "Encoder-decoder with variable-rate generation via cross-attention. Frozen speech encoder + LLM LoRA. 2.6%/5.2% WER on LibriSpeech, 4.7% on cross-domain TED-LIUM-v2. Published at EACL 2026 Findings.",
       partner: "",
       period: "May 2025 - Jan 2026",
       skills: ["PyTorch", "Whisper", "LLM", "LoRA", "ASR"],
-    },
-    {
-      name: "Voice/Singing Conversion (SVC)",
-      description:
-        "End-to-end SVC pipeline: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc on RTX A5000. Performed voice conversion and singing voice conversion inference.",
-      partner: "Personal Project",
-      period: "2025",
-      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
+      featured: true,
+      paper: "https://aclanthology.org/2026.findings-eacl.112/",
     },
     {
       name: "End-to-End Korean ASR",
@@ -65,6 +62,15 @@ export const siteConfig = {
       partner: "Smilegate",
       period: "2024 - Apr 2025",
       skills: ["NVIDIA NeMo", "FastConformer", "RNNT", "CTC"],
+      featured: true,
+    },
+    {
+      name: "Voice/Singing Conversion (SVC)",
+      description:
+        "End-to-end SVC pipeline: collected ~10h speaker data, extracted vocals via UVR5, trained so-vits-svc & whisper-vits-svc on RTX A5000. Performed voice conversion and singing voice conversion inference.",
+      partner: "Personal Project",
+      period: "2025",
+      skills: ["so-vits-svc", "Whisper", "UVR5", "SVC", "TTS"],
     },
     {
       name: "Telephony (8kHz) End-to-End ASR",
@@ -219,7 +225,7 @@ export const siteConfig = {
       {
         authors: "J. Oh and J.-H. Kim",
         title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
-        venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Advances in Knowledge Discovery and Data Mining, Springer Nature Singapore",
+        venue: "Advances in Knowledge Discovery and Data Mining (PAKDD 2026), Lecture Notes in Computer Science, vol. 16600, Springer, Singapore",
         year: "2026",
         volume: "pp. 251–262",
         note: "Oral",

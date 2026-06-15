@@ -24,7 +24,7 @@
 
 | Year | Paper | Venue |
 |------|-------|-------|
-| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD *(Oral)* |
+| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD 2026, LNCS vol. 16600 *(Oral)* |
 | 2026 | **SEAM**: Bridging Temporal-Semantic Gap for Speech-LLM | EACL Findings |
 | 2025 | **HiTCA**: Hierarchical Text & Contextual Audio for VCR | EURASIP JASM *(Under Review)* |
 
