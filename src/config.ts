@@ -5,7 +5,7 @@ export const siteConfig = {
   authorHighlight: ["J. Oh", "오준석"],
   title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
   subtitle: "Ph.D. Candidate, Sogang University · Available Aug 2026",
-  description: "Speech AI Engineer specializing in End-to-End ASR, Speech-LLM, and production speech systems",
+  description: "Research in end-to-end ASR, Speech-LLM, and speech AI",
   accentColor: "#0ea5e9", // sky-500 for a clean, professional feel
   social: {
     email: "ohjs@sogang.ac.kr",

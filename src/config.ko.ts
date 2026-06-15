@@ -8,9 +8,9 @@ export const siteConfig = {
   },
   title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
   subtitle: "서강대학교 컴퓨터공학과 박사과정 · 2026.08 졸업 예정",
-  description: "End-to-End ASR, Speech-LLM, 프로덕션 음성 AI 시스템 전문",
+  description: "End-to-end ASR, Speech-LLM, 음성 AI 연구",
   aboutMe:
-    "스트리밍 한국어 ASR부터 Speech-LLM 통합, 자동 말하기 평가까지 End-to-End 음성 AI 시스템을 설계·구현합니다. 박사 학위논문에서는 동결된 Whisper와 Gemma를 경량 어댑터만으로 연결하는 방식(PAKDD 2026, Oral)을 제안했고, 학술 강연 도메인에서 26.8% 상대 WER 감소를 달성했습니다. 서강대학교 박사과정을 수료 중이며(2026.08 졸업 예정), Speech AI 엔지니어 및 리서치 엔지니어 포지션에 관심이 있습니다.",
+    "스트리밍 한국어 음성인식(ASR)부터 Speech-LLM 통합, 말하기 자동 평가까지 엔드투엔드 음성 AI 시스템의 연구·구현. 박사 학위논문에서는 Whisper와 Gemma를 동결한 채 경량 어댑터만으로 연결하는 방식 제안(PAKDD 2026, 구두 발표), 해외 학술대회 발표 데이터셋에서 WER 26.8% 상대적 향상. 서강대학교 컴퓨터공학과 박사과정(2026년 8월 졸업 예정).",
   researchAreas: [
     { category: "음성 인식", items: ["스트리밍 ASR", "강건 ASR", "컨텍스트 바이어싱", "도메인 적응"] },
     { category: "Speech + LLM", items: ["Speech LLM", "LLM 기반 ASR", "멀티모달 AI"] },
