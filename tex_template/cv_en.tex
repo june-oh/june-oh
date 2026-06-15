@@ -1,64 +1,102 @@
 %------------------------
 % Curriculum Vitae — Junseok Oh (English)
-% Based on tex_template/cv_template.tex formatting
-% Source: docs/cv_en.docx
 % Compile: xelatex cv_en.tex
 %------------------------
 
 \documentclass[a4paper,9pt]{extarticle}
 
 \usepackage{kotex}
+\setmainhangulfont{Pretendard}[
+  BoldFont = {Pretendard Bold},
+  ItalicFont = {Pretendard Regular},
+  BoldItalicFont = {Pretendard Bold},
+]
 \usepackage{geometry}
-\geometry{a4paper, margin=1in}
+\geometry{a4paper, top=0.85in, bottom=0.85in, left=0.9in, right=0.9in}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage{changepage}
+\usepackage{microtype}
 
-\setlist{noitemsep, topsep=2pt, parsep=0pt, partopsep=0pt}
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
-\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
-\titlespacing*{\subsection}{0pt}{0.6\baselineskip}{0.3\baselineskip}
+\hypersetup{hidelinks}
 
-\newcommand{\researchentry}[4]{%
-  \noindent\textbf{#1} \hfill \textit{#2}\\
-  \textit{#3}
-  \begin{itemize}
-    #4
+\newlength{\cvdatewidth}
+\setlength{\cvdatewidth}{3.8cm}
+
+\newenvironment{tightitems}{%
+  \begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=2pt, parsep=0pt, partopsep=0pt]
+}{%
+  \end{itemize}%
+  \vspace{0.45em}
+}
+
+\newenvironment{blockitems}{%
+  \begin{itemize}[leftmargin=1.4em, itemsep=5pt, topsep=4pt, parsep=0pt, partopsep=0pt]
+}{%
   \end{itemize}
-  \vspace{0.4em}
+}
+
+\titleformat{\section}{\LARGE\bfseries\scshape}{}{0em}{}[\vspace{0.15em}\titlerule]
+\titlespacing*{\section}{0pt}{1.1\baselineskip}{0.6\baselineskip}
+\titleformat{\subsection}{\Large\bfseries\itshape}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{0.65\baselineskip}{0.35\baselineskip}
+
+\newcommand{\entrytitle}[1]{{\fontsize{10.5}{13}\selectfont\bfseries #1}}
+\newcommand{\me}[1]{\textbf{\underline{#1}}}
+
+\newcommand{\cvheader}[1]{%
+  \begin{center}
+    {\LARGE\bfseries Junseok Oh (오준석)}\\[0.55em]
+    {\normalsize\itshape #1}\\[0.75em]
+    (+82) 010-6640-0875 \;$|$\;
+    \href{mailto:ohjs@sogang.ac.kr}{ohjs@sogang.ac.kr} \;$|$\;
+    \href{https://june-oh.github.io/june-oh/}{june-oh.github.io/june-oh}
+  \end{center}
+  \vspace{0.5em}
 }
 
 \newcommand{\eduentry}[4]{%
-  \noindent\textbf{#1} \hfill #4\\
-  #2\\
-  #3
-  \vspace{0.3em}
+  \vspace{1.0em}
+  \noindent\entrytitle{#1}\hfill #4\par
+  \ifx&#3&\else\noindent\hfill\textit{#3}\par\fi
+  \noindent #2\par
+  \vspace{0.75em}
+}
+
+\newcommand{\researchentry}[4]{%
+  \vspace{0.55em}
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{\cvdatewidth}@{}}
+    \entrytitle{#1} & \textit{#2} \\
+  \end{tabularx}
+  \ifx&#3&\else\noindent\textit{#3}\par\fi
+  \vspace{0.1em}
+  \begin{itemize}[leftmargin=1.4em, itemsep=1pt, topsep=2pt, parsep=0pt]
+    #4
+  \end{itemize}
+  \vspace{0.25em}
 }
 
 \begin{document}
 \pagestyle{empty}
 
-\begin{center}
-  \textbf{\Large Junseok Oh (오준석)}\\[4pt]
-  \textbf{Curriculum Vitae}\\[4pt]
-  (+82) 010-6640-0875 \,|\, \href{mailto:ohjs@sogang.ac.kr}{ohjs@sogang.ac.kr} \,|\, \href{https://june-oh.github.io/june-oh/}{june-oh.github.io/june-oh}
-\end{center}
+\cvheader{Speech AI Engineer \textbar{} End-to-End ASR \& Speech-LLM}
 
-\section*{EDUCATION}
+\section*{Education}
 \eduentry{Sogang University}{Ph.D.\ in Computer Science and Engineering (Expected Aug 2026, Advisor: Prof.\ Ji-Hwan Kim)}{Seoul, South Korea}{Mar 2022 -- Aug 2026}
-\begin{itemize}
+\begin{tightitems}
   \item Dissertation: ``Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR''
-\end{itemize}
+\end{tightitems}
 \eduentry{Sogang University}{Master of Engineering in Computer Science and Engineering (Advisor: Prof.\ Ji-Hwan Kim)}{Seoul, South Korea}{Sep 2017 -- Aug 2019}
-\begin{itemize}
+\begin{tightitems}
   \item Thesis: ``Korean Real-Time Automatic Transcription System Using Weakly Labeled Corpus''
-\end{itemize}
-\eduentry{Sogang University}{Bachelor of Engineering in Computer Science and Engineering}{}{Mar 2010 -- Aug 2017}
+\end{tightitems}
+\eduentry{Sogang University}{Bachelor of Engineering in Computer Science and Engineering}{Seoul, South Korea}{Mar 2010 -- Aug 2017}
 \eduentry{Uijeongbu High School}{High School Diploma}{Uijeongbu, Gyeonggi-do, South Korea}{Mar 2007 -- Feb 2010}
 
-\section*{RESEARCH EXPERIENCE}
+\section*{Research Experience}
 \researchentry{Development of Dialog-based Multi-modal Explainable AI Technology}{Apr 2022 -- Present}{Funding Agency: Ministry of Science and ICT (MSIT) / IITP}{
   \item Developed an AI-based framework for dysarthria (speech disorder) severity classification, providing multi-modal explanations to support diagnostic decision-making.
   \item Implemented speech-based explainable diagnostic modules that analyze acoustic and linguistic features to provide interpretable feedback on severity levels.
@@ -97,58 +135,59 @@
   \item Conducted acoustic model retraining and language model updates using the new corpora, improving QA accuracy on complex video narratives.
 }
 
-\section*{PUBLICATIONS}
+\section*{Publications}
 \subsection*{International Journal}
-\begin{itemize}
-  \item J. Oh, J. Nam, and J.-H. Kim, ``HiTCA: Fusing Hierarchical Text and Contextual Audio for Accurate VCR,'' \textit{EURASIP Journal on Audio, Speech, and Music Processing}, under review. [SCIE]
-  \item S. Ma, J. Oh, M. Kim, and J.-H. Kim, ``Survey on Deep Learning-based Speech Technologies in Voice Chatbot Systems,'' \textit{KSII Transactions on Internet \& Information Systems (TIIS)}, vol.~19, no.~5, pp.~1406--1440, 2025. [SCIE]
-  \item J. Oh, E. Cho, and J.-H. Kim, ``Integration of WFST language model in pre-trained Korean E2E ASR model,'' \textit{KSII Transactions on Internet and Information Systems (TIIS)}, vol.~18, no.~6, pp.~1692--1705, 2024. [SCIE]
-  \item S. Seo, J. Oh, E. Cho, H. Park, G. Kim, and J.-H. Kim, ``TP-MobNet: A Two-pass Mobile Network for Low-complexity Classification of Acoustic Scene,'' \textit{Computers, Materials \& Continua}, vol.~73, no.~2, 2022. [SCIE]
-  \item M. Lim, D. Lee, H. Park, Y. Kang, J. Oh, J.-S. Park, G.-J. Jang, and J.-H. Kim, ``Convolutional neural network based audio event classification,'' \textit{KSII Transactions on Internet and Information Systems (TIIS)}, vol.~12, no.~6, pp.~2748--2760, Jun. 2018. [SCIE]
-\end{itemize}
+\begin{blockitems}
+  \item \me{J. Oh}, J. Nam, and J.-H. Kim, ``HiTCA: Fusing Hierarchical Text and Contextual Audio for Accurate VCR,'' \textit{EURASIP Journal on Audio, Speech, and Music Processing}, under review. [SCIE]
+  \item S. Ma, \me{J. Oh}, M. Kim, and J.-H. Kim, ``Survey on Deep Learning-based Speech Technologies in Voice Chatbot Systems,'' \textit{KSII Transactions on Internet \& Information Systems (TIIS)}, vol.~19, no.~5, pp.~1406--1440, 2025. [SCIE]
+  \item \me{J. Oh}, E. Cho, and J.-H. Kim, ``Integration of WFST language model in pre-trained Korean E2E ASR model,'' \textit{KSII Transactions on Internet and Information Systems (TIIS)}, vol.~18, no.~6, pp.~1692--1705, 2024. [SCIE]
+  \item S. Seo, \me{J. Oh}, E. Cho, H. Park, G. Kim, and J.-H. Kim, ``TP-MobNet: A Two-pass Mobile Network for Low-complexity Classification of Acoustic Scene,'' \textit{Computers, Materials \& Continua}, vol.~73, no.~2, 2022. [SCIE]
+  \item M. Lim, D. Lee, H. Park, Y. Kang, \me{J. Oh}, J.-S. Park, G.-J. Jang, and J.-H. Kim, ``Convolutional neural network based audio event classification,'' \textit{KSII Transactions on Internet and Information Systems (TIIS)}, vol.~12, no.~6, pp.~2748--2760, Jun. 2018. [SCIE]
+\end{blockitems}
 
 \subsection*{International Conference}
-\begin{itemize}
-  \item J. Oh and J.-H. Kim, ``Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR,'' in \textit{Advances in Knowledge Discovery and Data Mining (PAKDD 2026)}, Lecture Notes in Computer Science, vol.~16600, pp.~251--262, Springer, Singapore, 2026. [Oral]
-  \item J. Oh and J.-H. Kim, ``SEAM: Bridging the Temporal-Semantic Granularity Gap for LLM-based Speech Recognition,'' in \textit{Findings of the Association for Computational Linguistics: EACL 2026}, pp.~2135--2144, 2026.
-  \item J. Oh, H. Park, and J.-H. Kim, ``Speech Intelligibility Prediction of Dysarthria Using Deep Convolutional Networks,'' in \textit{Proc.\ APIC-IST 2023}, pp.~236--237, 2023.
-  \item M. Kim, J. Oh, and J.-H. Kim, ``Automated Dysarthria Severity Classification Using Diadochokinetic test and Speech Intelligibility Based on LightGBM,'' in \textit{Proc.\ APIC-IST 2023}, pp.~12--13, 2023.
-  \item S. Seo, M. Lim, D. Lee, H. Park, J. Oh, D. J. Rim, and J.-H. Kim, ``Environmental noise robustness for Korean fricatives using speech enhancement generative adversarial networks,'' in \textit{Proc.\ IEEE Int.\ Conf.\ Big Data and Smart Computing (BigComp)}, pp.~1--4, 2019.
-  \item S. Seo, D. J. Rim, M. Lim, D. Lee, H. Park, J. Oh, C. Kim, and J.-H. Kim, ``Shortcut connections based deep speaker embeddings for end-to-end speaker verification system,'' in \textit{Proc.\ Interspeech}, pp.~2928--2932, 2019.
-\end{itemize}
+\begin{blockitems}
+  \item \me{J. Oh} and J.-H. Kim, ``Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR,'' in \textit{Advances in Knowledge Discovery and Data Mining (PAKDD 2026)}, Lecture Notes in Computer Science, vol.~16600, pp.~251--262, Springer, Singapore, 2026. [Oral]
+  \item \me{J. Oh} and J.-H. Kim, ``SEAM: Bridging the Temporal-Semantic Granularity Gap for LLM-based Speech Recognition,'' in \textit{Findings of the Association for Computational Linguistics: EACL 2026}, pp.~2135--2144, 2026.
+  \item \me{J. Oh}, H. Park, and J.-H. Kim, ``Speech Intelligibility Prediction of Dysarthria Using Deep Convolutional Networks,'' in \textit{Proc.\ APIC-IST 2023}, pp.~236--237, 2023.
+  \item M. Kim, \me{J. Oh}, and J.-H. Kim, ``Automated Dysarthria Severity Classification Using Diadochokinetic test and Speech Intelligibility Based on LightGBM,'' in \textit{Proc.\ APIC-IST 2023}, pp.~12--13, 2023.
+  \item S. Seo, M. Lim, D. Lee, H. Park, \me{J. Oh}, D. J. Rim, and J.-H. Kim, ``Environmental noise robustness for Korean fricatives using speech enhancement generative adversarial networks,'' in \textit{Proc.\ IEEE Int.\ Conf.\ Big Data and Smart Computing (BigComp)}, pp.~1--4, 2019.
+  \item S. Seo, D. J. Rim, M. Lim, D. Lee, H. Park, \me{J. Oh}, C. Kim, and J.-H. Kim, ``Shortcut connections based deep speaker embeddings for end-to-end speaker verification system,'' in \textit{Proc.\ Interspeech}, pp.~2928--2932, 2019.
+\end{blockitems}
 
 \subsection*{Domestic Journal}
-\begin{itemize}
-  \item 이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, 오준석, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]
-  \item H. Park, Y. Kang, M. Lim, D. Lee, J. Oh, and J.-H. Kim, ``LFMMI-based acoustic modeling by using external knowledge,'' \textit{The Journal of the Acoustical Society of Korea}, vol.~38, no.~5, pp.~607--613, 2019. [KSCI/KCI]
-\end{itemize}
+\begin{blockitems}
+  \item 이정필, 장재후, 김지현, 김민섭, 김성준, 김민서, 김하영, \me{오준석}, 정원, 김장연 외, ``음성에 기반한 마비말장애 진단과 설명이 가능한 시스템,'' \textit{정보과학회지}, 42(4): 45--56, 2024. [KSCI/KCI]
+  \item H. Park, Y. Kang, M. Lim, D. Lee, \me{J. Oh}, and J.-H. Kim, ``LFMMI-based acoustic modeling by using external knowledge,'' \textit{The Journal of the Acoustical Society of Korea}, vol.~38, no.~5, pp.~607--613, 2019. [KSCI/KCI]
+\end{blockitems}
 
-\section*{AWARDS}
-\begin{itemize}
+\section*{Awards}
+\begin{blockitems}
   \item \textbf{2023 한국어 AI 경진대회} (NIA) --- Track2-1, 상담 음성인식: 오준석, 김민서, 남주형 (team ``상담ONE''), 장려상
   \item \textbf{2022 한국어 인공지능 경진대회} (NIA) --- 기업현안(회의음성): 오준석, 김하영 (team ``SGCSE''), 최우수상/네이버 대표 (1위)
   \item \textbf{2021 음절인식률 측정 알고리즘 개발 대회} (KT alpha) --- 박호성, 오준석, 조은수 (team ``검은사케동''), 최우수상 (1위)
-\end{itemize}
+\end{blockitems}
 
-\section*{PATENTS}
-\begin{itemize}
+\section*{Patents}
+\begin{blockitems}
   \item KR 10-2699607 (B1) --- \textit{Corpus Construction Service Provision Server and Method} (코퍼스 구축 서비스 제공 서버 및 방법).\\
   Inventors: Ji-Hwan Kim; Junseok Oh; Hosung Park.\\
   Assignee: Sogang University Industry--Academic Cooperation Foundation.\\
   Filed: Apr 29, 2020 (KR 10-2020-0052570); Published: Nov 8, 2021 (KR 10-2021-0133667); Granted: Aug 22, 2024; Gazette: Aug 26, 2024.
-\end{itemize}
+\end{blockitems}
 
-\section*{CERTIFICATES}
-\begin{itemize}
+\section*{Certificates}
+\begin{blockitems}
   \item NVIDIA Deep Learning Institute Certificate, \textit{Building Conversational AI Applications}, 2022
-\end{itemize}
+\end{blockitems}
 
-\section*{TECHNICAL SKILLS}
-\begin{itemize}
-  \item \textbf{Programming Languages \& Scripting:} Python
-  \item \textbf{Deep Learning Frameworks:} PyTorch, NVIDIA NeMo, Hugging Face Transformers, PEFT
-  \item \textbf{E2E ASR Toolkits:} Kaldi
-  \item \textbf{Other Tools \& Libraries:} KenLM
-\end{itemize}
+\section*{Technical Skills}
+\noindent
+\begin{tabular}{@{}p{0.46\textwidth}@{\hspace{0.04\textwidth}}p{0.46\textwidth}@{}}
+  \textbf{Programming Languages \& Scripting} & Python \\
+  \textbf{Deep Learning Frameworks} & PyTorch, NVIDIA NeMo, Hugging Face Transformers, PEFT \\
+  \textbf{E2E ASR Toolkits} & Kaldi \\
+  \textbf{Other Tools \& Libraries} & KenLM \\
+\end{tabular}
 
 \end{document}
