@@ -6,10 +6,10 @@ export const siteConfig = {
     ...enConfig.social,
     cv: "/june-oh/cv_ko.pdf",
   },
-  title: "서강대학교 컴퓨터공학과 박사과정 수료",
+  title: "서강대학교 컴퓨터공학과 박사 (2026.08 졸업 예정)",
   description: "음성 인식 & AI 연구자 | 서강대학교",
   aboutMe:
-    "서강대학교 컴퓨터공학과 박사과정 수료 (지도교수: 김지환). 주요 연구 분야는 End-to-End 음성 인식(ASR), 음성 분석 및 평가, 문맥 인식 및 도메인 특화 ASR, 대규모 언어 모델(LLM)과 음성 기술의 통합입니다. 강건한 저지연 스트리밍 ASR 시스템 개발과 자동 말하기 평가 프레임워크 구축에 주력하고 있습니다.",
+    "서강대학교 컴퓨터공학과 박사과정 (2026.08 졸업 예정, 지도교수: 김지환). 주요 연구 분야는 End-to-End 음성 인식(ASR), 음성 분석 및 평가, 문맥 인식 및 도메인 특화 ASR, 대규모 언어 모델(LLM)과 음성 기술의 통합입니다. 강건한 저지연 스트리밍 ASR 시스템 개발과 자동 말하기 평가 프레임워크 구축에 주력하고 있습니다.",
   researchAreas: [
     { category: "음성 인식", items: ["스트리밍 ASR", "강건 ASR", "컨텍스트 바이어싱", "도메인 적응"] },
     { category: "Speech + LLM", items: ["Speech LLM", "LLM 기반 ASR", "멀티모달 AI"] },
@@ -17,11 +17,11 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "박사 학위 논문: Adapter-Only Speech–LLM Bridging",
+      name: "박사 학위논문: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
       description:
-        "Whisper(음성 인코더)와 Gemma(LLM) 모두 동결 상태에서 전체의 0.44% 경량 어댑터만 학습. 학술 강연 4개 분야 평균 26.8% WER 감소. 자연어 도메인 프롬프팅으로 전문 어휘 F1 +7.2%p 향상. PAKDD 2026 Accepted (Oral).",
+        "Whisper(음성 인코더)와 Gemma(LLM) 모두 동결 상태에서 전체의 0.44% 경량 어댑터만 학습. 학술 강연 4개 분야 평균 26.8% WER 감소. 자연어 도메인 프롬프팅으로 전문 어휘 F1 +7.2%p 향상. PAKDD 2026 게재 (Oral).",
       partner: "",
-      period: "2025.10 - 현재",
+      period: "2025.10 - 2026.08",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
@@ -101,12 +101,12 @@ export const siteConfig = {
     {
       company: "서강대학교 Auditory Intelligence Lab",
       title: "박사 연구원",
-      dateRange: "2022.03 - 현재",
+      dateRange: "2022.03 - 2026.08 (졸업 예정)",
       bullets: [
         "지도교수: 김지환",
+        "학위논문: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         "End-to-End ASR, 음성 분석, LLM 통합 기술 연구",
-        "FastConformer RNNT+CTC 기반 스트리밍 ASR 시스템 개발",
-        "EACL, PAKDD, TIIS 등 국제 학술대회/저널 논문 게재",
+        "PAKDD, EACL, TIIS 등 국제 학술대회/저널 논문 게재",
       ],
     },
     {
@@ -124,13 +124,14 @@ export const siteConfig = {
   education: [
     {
       school: "서강대학교",
-      degree: "컴퓨터공학과 박사과정 수료",
-      dateRange: "2022.03 - 현재",
+      degree: "컴퓨터공학과 박사 (2026.08 졸업 예정)",
+      dateRange: "2022.03 - 2026.08 (졸업 예정)",
       achievements: [
         "지도교수: 김지환",
+        "학위논문: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         "연구 분야: End-to-End ASR, 음성 분석, LLM 통합",
-        "PAKDD 2026 Accepted (Oral Presentation)",
-        "EACL 2026 Findings Accepted",
+        "PAKDD 2026 (Oral Presentation)",
+        "EACL 2026 Findings (SEAM)",
       ],
     },
     {

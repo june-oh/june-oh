@@ -1,6 +1,6 @@
 ## 👋 Hi there! I'm **Junseok Oh (오준석)** aka **june-oh** or **RiceBerry**
 
-🎓 **Ph.D. Candidate** @ Sogang University, Auditory Intelligence Lab  
+🎓 **Ph.D. Candidate (Expected Aug 2026)** @ Sogang University, Auditory Intelligence Lab  
 🔬 Advised by Prof. Ji-Hwan Kim
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-june--oh.github.io-0ea5e9?style=for-the-badge)](https://june-oh.github.io/june-oh/)
@@ -24,7 +24,7 @@
 
 | Year | Paper | Venue |
 |------|-------|-------|
-| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD *(Accepted, Oral)* |
+| 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD *(Oral)* |
 | 2026 | **SEAM**: Bridging Temporal-Semantic Gap for Speech-LLM | EACL Findings |
 | 2025 | **HiTCA**: Hierarchical Text & Contextual Audio for VCR | EURASIP JASM *(Under Review)* |
 

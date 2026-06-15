@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# LaTeX build artifacts
+tex_template/*.aux
+tex_template/*.log
+tex_template/*.out

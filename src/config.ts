@@ -3,7 +3,7 @@ export const siteConfig = {
   nickname: "june-oh / RiceBerry",
   // Author name patterns to highlight in publications
   authorHighlight: ["J. Oh", "오준석"],
-  title: "Ph.D. Candidate in Computer Science and Engineering",
+  title: "Ph.D. Candidate in Computer Science and Engineering (Expected Aug 2026)",
   description: "Speech Recognition & AI Researcher at Sogang University",
   accentColor: "#0ea5e9", // sky-500 for a clean, professional feel
   social: {
@@ -35,11 +35,11 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Adapter-Only Speech-LLM Bridging (PhD Dissertation)",
+      name: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR (PhD Dissertation)",
       description:
-        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. PAKDD 2026 Accepted (Oral).",
+        "Fully frozen Whisper + Gemma with lightweight adapter-only bridging (0.44% params). 26.8% WER reduction on academic domains via inference-time domain prompting. Published at PAKDD 2026 (Oral).",
       partner: "",
-      period: "Oct 2025 - Present",
+      period: "Oct 2025 - Aug 2026",
       skills: ["PyTorch", "Whisper", "Gemma", "Adapter", "Domain Adaptation"],
     },
     {
@@ -119,12 +119,12 @@ export const siteConfig = {
     {
       company: "Sogang University - Auditory Intelligence Lab",
       title: "Ph.D. Student",
-      dateRange: "Mar 2022 - Present",
+      dateRange: "Mar 2022 - Aug 2026 (expected)",
       bullets: [
         "Advisor: Prof. Ji-Hwan Kim",
+        "Dissertation: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         "Research on End-to-End ASR, Speech Analytics, and LLM integration in Speech Technology",
-        "Developed streaming ASR systems with FastConformer RNNT+CTC architecture",
-        "Published papers in EACL, EURASIP JASM, and TIIS journals",
+        "Published papers in PAKDD, EACL, EURASIP JASM, and TIIS",
       ],
     },
     {
@@ -142,13 +142,14 @@ export const siteConfig = {
   education: [
     {
       school: "Sogang University",
-      degree: "Ph.D. Candidate in Computer Science and Engineering",
-      dateRange: "Mar 2022 - Present",
+      degree: "Ph.D. in Computer Science and Engineering (Expected Aug 2026)",
+      dateRange: "Mar 2022 - Aug 2026 (expected)",
       achievements: [
         "Advisor: Prof. Ji-Hwan Kim",
+        "Dissertation: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
         "Research Focus: End-to-End ASR, Speech Analytics, LLM Integration",
-        "PAKDD 2026 Accepted, Oral Presentation",
-        "EACL 2026 Findings Accepted (SEAM)",
+        "PAKDD 2026 (Oral Presentation)",
+        "EACL 2026 Findings (SEAM)",
       ],
     },
     {
@@ -218,10 +219,11 @@ export const siteConfig = {
       {
         authors: "J. Oh and J.-H. Kim",
         title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
-        venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)",
+        venue: "Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD), Advances in Knowledge Discovery and Data Mining, Springer Nature Singapore",
         year: "2026",
-        note: "Accepted, Oral",
-        link: "/june-oh/papers/pakdd2026_adapter_only_asr.pdf",
+        volume: "pp. 251–262",
+        note: "Oral",
+        link: "https://doi.org/10.1007/978-981-92-1468-6_15",
       },
       {
         authors: "J. Oh and J.-H. Kim",
