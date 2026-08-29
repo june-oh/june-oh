@@ -4,7 +4,7 @@ export const siteConfig = {
   // Author name patterns to highlight in publications
   authorHighlight: ["J. Oh", "오준석"],
   title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
-  subtitle: "Ph.D. Candidate, Sogang University · Available Aug 2026",
+  subtitle: "Ph.D. in Computer Science and Engineering, Sogang University",
   description: "Research in end-to-end ASR, Speech-LLM, and speech AI",
   accentColor: "#0ea5e9", // sky-500 for a clean, professional feel
   social: {
@@ -15,7 +15,7 @@ export const siteConfig = {
     cv: "/june-oh/cv_en.pdf",
   },
   aboutMe:
-    "I build end-to-end speech AI systems—from streaming Korean ASR to Speech-LLM integration and automated speaking assessment. For my Ph.D. dissertation, I developed adapter-only bridging between frozen Whisper and Gemma (PAKDD 2026, Oral), achieving 26.8% relative WER reduction on academic lecture domains with inference-time domain prompting. I am completing my doctorate at Sogang University (expected Aug 2026) and am open to speech AI engineer and research engineer roles.",
+    "I build end-to-end speech AI systems—from streaming Korean ASR to Speech-LLM integration and automated speaking assessment. For my Ph.D. dissertation, I developed adapter-only bridging between frozen Whisper and Gemma (PAKDD 2026, Oral), achieving 26.8% relative WER reduction on academic lecture domains with inference-time domain prompting. I received my Ph.D. from Sogang University in August 2026 and am open to speech AI engineer and research engineer roles.",
   // Skill icons from skillicons.dev (general programming tools)
   skillIcons: ["py", "c", "pytorch", "linux", "bash", "git", "github", "gitlab", "docker", "vscode"],
   // Speech/ML specific tools (displayed as text badges)
@@ -125,7 +125,7 @@ export const siteConfig = {
     {
       company: "Sogang University - Auditory Intelligence Lab",
       title: "Ph.D. Student",
-      dateRange: "Mar 2022 - Aug 2026 (expected)",
+      dateRange: "Mar 2022 - Aug 2026",
       bullets: [
         "Advisor: Prof. Ji-Hwan Kim",
         "Dissertation: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
@@ -148,8 +148,8 @@ export const siteConfig = {
   education: [
     {
       school: "Sogang University",
-      degree: "Ph.D. in Computer Science and Engineering (Expected Aug 2026)",
-      dateRange: "Mar 2022 - Aug 2026 (expected)",
+      degree: "Ph.D. in Computer Science and Engineering",
+      dateRange: "Mar 2022 - Aug 2026",
       achievements: [
         "Advisor: Prof. Ji-Hwan Kim",
         "Dissertation: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
@@ -222,6 +222,14 @@ export const siteConfig = {
       },
     ],
     conferences: [
+      {
+        authors: "S. Ma, J. Oh, and J.-H. Kim",
+        title:
+          "Retention-Preserving Gradient Projection with Entropy-Guided Token-Level Distillation for Rehearsal-Free Continual ASR",
+        venue: "Proc. Interspeech, Sydney, Australia",
+        year: "2026",
+        note: "Accepted",
+      },
       {
         authors: "J. Oh and J.-H. Kim",
         title: "Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",

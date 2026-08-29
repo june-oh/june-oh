@@ -7,10 +7,10 @@ export const siteConfig = {
     cv: "/june-oh/cv_ko.pdf",
   },
   title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
-  subtitle: "서강대학교 컴퓨터공학과 박사과정 · 2026.08 졸업 예정",
+  subtitle: "서강대학교 컴퓨터공학과 공학박사",
   description: "End-to-end ASR, Speech-LLM, 음성 AI 연구",
   aboutMe:
-    "스트리밍 한국어 음성인식(ASR)부터 Speech-LLM 통합, 말하기 자동 평가까지 엔드투엔드 음성 AI 시스템의 연구·구현. 박사 학위논문에서는 Whisper와 Gemma를 동결한 채 경량 어댑터만으로 연결하는 방식 제안(PAKDD 2026, 구두 발표), 해외 학술대회 발표 데이터셋에서 WER 26.8% 상대적 향상. 서강대학교 컴퓨터공학과 박사과정(2026년 8월 졸업 예정).",
+    "스트리밍 한국어 음성인식(ASR)부터 Speech-LLM 통합, 말하기 자동 평가까지 엔드투엔드 음성 AI 시스템의 연구·구현. 박사 학위논문에서는 Whisper와 Gemma를 동결한 채 경량 어댑터만으로 연결하는 방식 제안(PAKDD 2026, 구두 발표), 해외 학술대회 발표 데이터셋에서 WER 26.8% 상대적 향상. 서강대학교 컴퓨터공학과 공학박사(2026년 8월).",
   researchAreas: [
     { category: "음성 인식", items: ["스트리밍 ASR", "강건 ASR", "컨텍스트 바이어싱", "도메인 적응"] },
     { category: "Speech + LLM", items: ["Speech LLM", "LLM 기반 ASR", "멀티모달 AI"] },
@@ -107,7 +107,7 @@ export const siteConfig = {
     {
       company: "서강대학교 Auditory Intelligence Lab",
       title: "박사 연구원",
-      dateRange: "2022.03 - 2026.08 (졸업 예정)",
+      dateRange: "2022.03 - 2026.08",
       bullets: [
         "지도교수: 김지환",
         "학위논문: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
@@ -130,8 +130,8 @@ export const siteConfig = {
   education: [
     {
       school: "서강대학교",
-      degree: "컴퓨터공학과 박사 (2026.08 졸업 예정)",
-      dateRange: "2022.03 - 2026.08 (졸업 예정)",
+      degree: "컴퓨터공학과 공학박사",
+      dateRange: "2022.03 - 2026.08",
       achievements: [
         "지도교수: 김지환",
         "학위논문: Adapter-Only Bridging of Frozen Speech Encoder and Frozen LLM for ASR",
