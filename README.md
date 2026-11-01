@@ -1,12 +1,16 @@
 ## 👋 Hi there! I'm **Junseok Oh (오준석)** aka **june-oh** or **RiceBerry**
 
+💼 **Pro, AI Development Part, AX/PI Center** @ **Samsung Fire & Marine Insurance**<br>
+삼성화재 AX/PI 센터 AI 개발파트 오준석 프로<br>
 🎓 **Ph.D. in Computer Science and Engineering (Aug 2026)** @ Sogang University, Auditory Intelligence Lab  
 🔬 Advised by Prof. Ji-Hwan Kim
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-june--oh.github.io-0ea5e9?style=for-the-badge)](https://june-oh.github.io/june-oh/)
-[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=W3GNCfgAAAAJ)
+[![Google Scholar](https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=OuyXbuIAAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/junseokoh-riceberry)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ohjs@sogang.ac.kr)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:js1024.oh@samsung.com)
+
+📄 CV: [English](https://june-oh.github.io/june-oh/cv_en.pdf) · [한국어](https://june-oh.github.io/june-oh/cv_ko.pdf)
 
 ---
 
@@ -24,10 +28,10 @@
 
 | Year | Paper | Venue |
 |------|-------|-------|
-| 2026 | **Retention-Preserving Gradient Projection** for Rehearsal-Free Continual ASR | Interspeech 2026 *(Accepted)* |
+| 2026 | [**HiTCA**: Hierarchical Text & Contextual Audio for VCR](https://doi.org/10.1186/s13636-026-00481-2) | Journal on Audio, Speech, and Music Processing, article 41 |
+| 2026 | [**Retention-Preserving Gradient Projection** for Rehearsal-Free Continual ASR](https://www.isca-archive.org/interspeech_2026/ma26d_interspeech.html) | Interspeech 2026, pp. 6599–6603 |
 | 2026 | **Adapter-Only Bridging** of Frozen Speech Encoder & LLM | PAKDD 2026, LNCS vol. 16600 *(Oral)* |
 | 2026 | **SEAM**: Bridging Temporal-Semantic Gap for Speech-LLM | EACL Findings |
-| 2025 | **HiTCA**: Hierarchical Text & Contextual Audio for VCR | EURASIP JASM *(Under Review)* |
 
 ---
 

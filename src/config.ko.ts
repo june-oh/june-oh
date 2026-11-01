@@ -6,11 +6,11 @@ export const siteConfig = {
     ...enConfig.social,
     cv: "/june-oh/cv_ko.pdf",
   },
-  title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
-  subtitle: "서강대학교 컴퓨터공학과 공학박사",
-  description: "End-to-end ASR, Speech-LLM, 음성 AI 연구",
+  title: "삼성화재 AX/PI 센터 AI 개발파트 · 프로",
+  subtitle: "서강대학교 컴퓨터공학과 공학박사 · End-to-End ASR & Speech-LLM",
+  description: "삼성화재 AX/PI 센터 AI 개발파트 오준석 프로. End-to-end ASR, Speech-LLM, 음성 AI 연구.",
   aboutMe:
-    "스트리밍 한국어 음성인식(ASR)부터 Speech-LLM 통합, 말하기 자동 평가까지 엔드투엔드 음성 AI 시스템의 연구·구현. 박사 학위논문에서는 Whisper와 Gemma를 동결한 채 경량 어댑터만으로 연결하는 방식 제안(PAKDD 2026, 구두 발표), 해외 학술대회 발표 데이터셋에서 WER 26.8% 상대적 향상. 서강대학교 컴퓨터공학과 공학박사(2026년 8월).",
+    "삼성화재 AX/PI 센터 AI 개발파트에서 프로로 재직 중입니다. 스트리밍 한국어 음성인식(ASR)부터 Speech-LLM 통합, 말하기 자동 평가까지 엔드투엔드 음성 AI 시스템을 연구·구현해 왔습니다. 박사 학위논문에서는 Whisper와 Gemma를 동결한 채 경량 어댑터만으로 연결하는 방식을 제안했고(PAKDD 2026, 구두 발표), 해외 학술대회 발표 데이터셋에서 WER을 26.8% 상대적으로 개선했습니다. 2026년 8월 서강대학교 컴퓨터공학과에서 공학박사 학위를 받았습니다.",
   researchAreas: [
     { category: "음성 인식", items: ["스트리밍 ASR", "강건 ASR", "컨텍스트 바이어싱", "도메인 적응"] },
     { category: "Speech + LLM", items: ["Speech LLM", "LLM 기반 ASR", "멀티모달 AI"] },
@@ -104,6 +104,12 @@ export const siteConfig = {
     },
   ],
   experience: [
+    {
+      company: "삼성화재",
+      title: "프로 · AI 개발파트",
+      dateRange: "현재",
+      bullets: ["AX/PI 센터"],
+    },
     {
       company: "서강대학교 Auditory Intelligence Lab",
       title: "박사 연구원",

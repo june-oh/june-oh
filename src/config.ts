@@ -3,19 +3,19 @@ export const siteConfig = {
   nickname: "june-oh / RiceBerry",
   // Author name patterns to highlight in publications
   authorHighlight: ["J. Oh", "오준석"],
-  title: "Speech AI Engineer · End-to-End ASR & Speech-LLM",
-  subtitle: "Ph.D. in Computer Science and Engineering, Sogang University",
-  description: "Research in end-to-end ASR, Speech-LLM, and speech AI",
+  title: "AI Developer · Samsung Fire & Marine Insurance",
+  subtitle: "Pro, AI Development Part, AX/PI Center · Ph.D., Sogang University",
+  description: "Junseok Oh, Pro in the AI Development Part, AX/PI Center at Samsung Fire & Marine Insurance. Research in end-to-end ASR, Speech-LLM, and speech AI.",
   accentColor: "#0ea5e9", // sky-500 for a clean, professional feel
   social: {
-    email: "ohjs@sogang.ac.kr",
+    email: "js1024.oh@samsung.com",
     github: "https://github.com/june-oh",
     linkedin: "https://www.linkedin.com/in/junseokoh-riceberry",
-    scholar: "https://scholar.google.com/citations?user=W3GNCfgAAAAJ",
+    scholar: "https://scholar.google.com/citations?user=OuyXbuIAAAAJ",
     cv: "/june-oh/cv_en.pdf",
   },
   aboutMe:
-    "I build end-to-end speech AI systems—from streaming Korean ASR to Speech-LLM integration and automated speaking assessment. For my Ph.D. dissertation, I developed adapter-only bridging between frozen Whisper and Gemma (PAKDD 2026, Oral), achieving 26.8% relative WER reduction on academic lecture domains with inference-time domain prompting. I received my Ph.D. from Sogang University in August 2026 and am open to speech AI engineer and research engineer roles.",
+    "I am a Pro in the AI Development Part, AX/PI Center at Samsung Fire & Marine Insurance. My research spans end-to-end speech AI systems, from streaming Korean ASR to Speech-LLM integration and automated speaking assessment. For my Ph.D. dissertation, I developed adapter-only bridging between frozen Whisper and Gemma (PAKDD 2026, Oral), achieving 26.8% relative WER reduction on academic lecture domains with inference-time domain prompting. I received my Ph.D. from Sogang University in August 2026.",
   // Skill icons from skillicons.dev (general programming tools)
   skillIcons: ["py", "c", "pytorch", "linux", "bash", "git", "github", "gitlab", "docker", "vscode"],
   // Speech/ML specific tools (displayed as text badges)
@@ -123,6 +123,12 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Samsung Fire & Marine Insurance",
+      title: "Pro · AI Development Part",
+      dateRange: "Present",
+      bullets: ["AX/PI Center"],
+    },
+    {
       company: "Sogang University - Auditory Intelligence Lab",
       title: "Ph.D. Student",
       dateRange: "Mar 2022 - Aug 2026",
@@ -180,9 +186,11 @@ export const siteConfig = {
       {
         authors: "J. Oh, J. Nam, and J.-H. Kim",
         title: "HiTCA: Fusing Hierarchical Text and Contextual Audio for Accurate VCR",
-        venue: "EURASIP Journal on Audio, Speech, and Music Processing",
-        year: "2025",
-        note: "SCIE, Under Review",
+        venue: "Journal on Audio, Speech, and Music Processing",
+        year: "2026",
+        volume: "vol. 2026, article 41",
+        note: "SCIE",
+        link: "https://doi.org/10.1186/s13636-026-00481-2",
       },
       {
         authors: "S. Ma, J. Oh, M. Kim, and J.-H. Kim",
@@ -207,7 +215,7 @@ export const siteConfig = {
         title: "TP-MobNet: A Two-pass Mobile Network for Low-complexity Classification of Acoustic Scene",
         venue: "Computers, Materials & Continua",
         year: "2022",
-        volume: "vol. 73, no. 2",
+        volume: "vol. 73, no. 2, pp. 3291–3303",
         note: "SCIE",
         link: "https://www.techscience.com/cmc/v73n2/48321",
       },
@@ -228,7 +236,8 @@ export const siteConfig = {
           "Retention-Preserving Gradient Projection with Entropy-Guided Token-Level Distillation for Rehearsal-Free Continual ASR",
         venue: "Proc. Interspeech, Sydney, Australia",
         year: "2026",
-        note: "Accepted",
+        volume: "pp. 6599–6603",
+        link: "https://www.isca-archive.org/interspeech_2026/ma26d_interspeech.html",
       },
       {
         authors: "J. Oh and J.-H. Kim",
